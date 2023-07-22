@@ -1,0 +1,31 @@
+@use '../../styles/colours.scss' as *;
+@use '../../styles/conversions.scss' as *;
+@use '../../styles/global.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.head-logo {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+
+    &__list {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__item {
+        color: $color-a;
+        list-style: none;
+
+        &:hover .navbar__link {
+            color: $color-b;
+        }
+    }
+
+    &__link {
+        display: flex;
+        text-decoration: none;
+    }
+}

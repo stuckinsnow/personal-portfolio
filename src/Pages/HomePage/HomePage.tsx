@@ -1,4 +1,3 @@
-// import React from 'react';
 import './HomePage.scss';
 import { useDocumentTitle } from '../../utils/functions';
 
@@ -7,7 +6,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
-      <p>beep</p>
+      Beep
     </div>
   );
 };

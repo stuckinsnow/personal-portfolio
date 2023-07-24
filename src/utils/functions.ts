@@ -64,3 +64,8 @@ export function animateLetters(className: string): void {
     }
   });
 }
+
+export const getApiUrl = () => {
+  const serverBaseUrl = process.env.REACT_APP_API_URL;
+  return `${serverBaseUrl}/users/stuckinsnow/`;
+};

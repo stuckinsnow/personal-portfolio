@@ -5,22 +5,51 @@
 
 .head-logo {
     text-decoration: none;
+    position: absolute;
 }
 
 .navbar {
     display: flex;
+    justify-content: center;
 
     &__list {
         display: flex;
         gap: 2rem;
+        position: absolute;
+
     }
 
     &__item {
         color: $color-a;
         list-style: none;
+        width: 6rem;
+        height: 4rem;
+        z-index: 0;
+        margin-top: 14rem;
+        background: rgba(255, 183, 247, 0.09);
+        border-radius: 0.75rem;
+        box-shadow: 0 $px5 $px30 rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0.5rem);
+        -webkit-backdrop-filter: blur(0.5rem);
+        border: 1px solid rgba(255, 183, 247, 0.3);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out;
+
+        &:hover {
+            z-index: 2;
+            margin-top: 16rem;
+        }
+
 
         &:hover .navbar__link {
             color: $color-b;
+        }
+
+        .hovered {
+            z-index: 2;
         }
     }
 

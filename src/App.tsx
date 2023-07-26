@@ -1,8 +1,8 @@
 // import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './Pages/HomePage/HomePage';
 import Header from './Components/Header/Header';
+import HomePage from './Pages/HomePage/HomePage';
+import Calculator from './Pages/Calculator/Calculator';
 import Footer from './Components/Footer/Footer';
 
 function App(): JSX.Element {
@@ -11,6 +11,7 @@ function App(): JSX.Element {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/calculator" element={<Calculator />} />
       </Routes>
       <Footer />
     </Router>

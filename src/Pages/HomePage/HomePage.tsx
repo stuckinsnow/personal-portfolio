@@ -3,11 +3,13 @@ import { useDocumentTitle } from '../../utils/functions';
 
 const HomePage: React.FC = () => {
   useDocumentTitle('Home Page');
-
   return (
-    <div>
-      Beep
-    </div>
+
+    <>
+      <div className='divider'>
+      </div>
+    </>
+
   );
 };
 

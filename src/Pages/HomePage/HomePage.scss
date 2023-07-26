@@ -14,3 +14,34 @@
     -webkit-backdrop-filter: blur($px5);
     border: 1px solid rgba(255, 183, 247, 0.03);
 }
+
+
+
+
+
+
+
+.fun {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    &__item {
+        width: 6rem;
+        height: 4rem;
+        z-index: 0;
+        margin-top: 15rem;
+        background: rgba(255, 183, 247, 0.09);
+        border-radius: 0.75rem;
+        box-shadow: 0 $px5 $px30 rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0.5rem);
+        -webkit-backdrop-filter: blur(0.5rem);
+        border: 1px solid rgba(255, 183, 247, 0.3);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out;
+        overflow: hidden;
+    }
+}

@@ -37,6 +37,7 @@ const Contributions: React.FC = () => {
 
     return (
         <div className='footer'>
+            hi
             <Snackbar open={!!error} autoHideDuration={6000} onClose={handleSnackbarClose}>
                 <MuiAlert elevation={6} variant="filled" severity="error" onClose={handleSnackbarClose}>
                     {error}

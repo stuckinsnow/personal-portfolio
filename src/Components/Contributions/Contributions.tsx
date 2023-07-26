@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
-import { fetchContributions, ContributionData } from '../../utils/github';
+import { ContributionData, fetchContributions } from '../../utils/github';
 import './Contributions.scss';
 
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 
 const Contributions: React.FC = () => {
-    const token = process.env.REACT_APP_API_KEY || '';
-    const userName = process.env.REACT_APP_USERNAME || '';
+    let token = process.env.REACT_APP_API_KEY || '';
+    let userName = process.env.REACT_APP_USERNAME || '';
 
     // token = 'bob';
     // userName = 'bob';
@@ -26,6 +26,8 @@ const Contributions: React.FC = () => {
                     console.error('Error fetching GitHub contribution data:', error);
                     setError('An error occurred while fetching GitHub contribution data.');
                 }
+            } else {
+                setError('Else error');
             }
         };
         fetchData();
@@ -34,6 +36,8 @@ const Contributions: React.FC = () => {
     const handleSnackbarClose = () => {
         setError(null);
     };
+
+    console.log(contributionData);
 
     return (
         <div className='footer'>
@@ -44,11 +48,9 @@ const Contributions: React.FC = () => {
                 </MuiAlert>
             </Snackbar>
 
-            {contributionData && (
-                <>
-                    <p>Total Contributions: {contributionData.user.contributionsCollection.contributionCalendar.totalContributions}</p>
-                </>
-            )}
+
+            <p>Total Contributions: {contributionData?.user.contributionsCollection.contributionCalendar.totalContributions}</p>
+
         </div>
     );
 };

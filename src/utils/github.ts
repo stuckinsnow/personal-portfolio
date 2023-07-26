@@ -2,7 +2,8 @@ import { graphql } from '@octokit/graphql';
 
 export const getApiUrl = () => {
   const serverBaseUrl = process.env.REACT_APP_API_URL;
-  return `${serverBaseUrl}/users/stuckinsnow/`;
+  const userName = process.env.REACT_APP_USERNAME;
+  return `${serverBaseUrl}/users/${userName}`;
 };
 
 export interface ContributionData {

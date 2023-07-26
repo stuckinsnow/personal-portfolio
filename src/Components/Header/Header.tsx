@@ -42,7 +42,7 @@ const Header: React.FC = () => {
   return (
     <div id='c-header'>
       <Link className="head-logo" to={"/"} onClick={handleNavLinkClick}>
-        <span>Philip's </span><span>portfolio</span>
+        {/* <span>Philip's </span><span>portfolio</span> */}
       </Link>
 
       {/* Navbar */}

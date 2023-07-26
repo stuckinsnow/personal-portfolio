@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { fetchContributions, ContributionData } from '../../utils/github';
 import './Contributions.scss';
 

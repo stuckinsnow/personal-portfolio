@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { graphql } from '@octokit/graphql';
 
 export const useDocumentTitle = (title: string): void => {
   useEffect(() => {
@@ -64,8 +65,3 @@ export function animateLetters(className: string): void {
     }
   });
 }
-
-export const getApiUrl = () => {
-  const serverBaseUrl = process.env.REACT_APP_API_URL;
-  return `${serverBaseUrl}/users/stuckinsnow/`;
-};

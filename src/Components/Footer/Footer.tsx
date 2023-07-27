@@ -5,9 +5,7 @@ const Footer: React.FC = () => {
 
     return (
         <div>
-            <>
-                <Contributions />
-            </>
+            <></>
         </div>
     );
 };

@@ -2,6 +2,8 @@ import { ApolloClient, InMemoryCache, ApolloProvider, useQuery, gql, HttpLink } 
 import { setContext } from '@apollo/client/link/context';
 import { Link } from 'react-router-dom';
 
+import './Repositories.scss';
+
 const client = new ApolloClient({
   link: setContext((_, { headers }) => {
     const token = process.env.REACT_APP_API_KEY;
@@ -21,7 +23,7 @@ const client = new ApolloClient({
 const GET_REPOSITORIES = gql`
   query {
     viewer {
-       repositories(first: 10, orderBy: { field: CREATED_AT, direction: DESC }) {
+       repositories(first: 3, orderBy: { field: CREATED_AT, direction: DESC }) {
         nodes {
           name
           description
@@ -39,13 +41,13 @@ const RepositoriesWithoutApollo: React.FC = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <div>
-      <h1>GitHub Repositories</h1>
+    <div className='c-repositories writing-block'>
+      <h3>Recent Commits:</h3>
       {data.viewer.repositories.nodes.map((repo: any) => (
-        <ul key={repo.name}>
+        <ul key={repo.name} className='repo-list'>
           {/* {repo.description && <p>{repo.description}</p>} */}
-          <li>
-            <Link to={repo.url}>{repo.name}</Link>
+          <li className='repo-list__item'>
+            <Link to={repo.url} className='repo-list__link'>{repo.name}</Link>
           </li>
         </ul>
       ))}

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { ContributionData, fetchContributions } from '../../utils/github';
-import Repositories from '../Repositories/Repositories';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import { BarChart } from '@mui/x-charts';
@@ -92,8 +91,6 @@ const Contributions: React.FC = () => {
                 </>
             )}
             <p>Total Contributions: {contributionData?.user.contributionsCollection.contributionCalendar.totalContributions}</p>
-
-            {/* <Repositories /> */}
         </div>
     );
 };

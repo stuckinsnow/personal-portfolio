@@ -1,0 +1,29 @@
+@use '../../styles/colours.scss' as *;
+@use '../../styles/conversions.scss' as *;
+@use '../../styles/global.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.c-repositories {
+    box-sizing: border-box;
+
+}
+
+
+.repo-list {
+
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+
+    &__item,
+    &__item:active {
+
+        color: red;
+
+    }
+
+    &__item:nth-child(odd) {
+        color: black;
+    }
+
+}

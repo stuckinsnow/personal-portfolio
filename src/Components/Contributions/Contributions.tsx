@@ -37,7 +37,12 @@ const Contributions: React.FC = () => {
         setError(null);
     };
 
-    console.log(userName);
+    console.log(contributionData?.user.contributionsCollection.contributionCalendar.weeks[52]);
+    console.log(contributionData?.user.contributionsCollection.contributionCalendar.weeks[52].contributionDays);
+
+    // contributionDays: {
+    //     date: string;
+    //     contributionCount: number;
 
     return (
         <div className='footer'>
@@ -50,6 +55,9 @@ const Contributions: React.FC = () => {
 
 
             <p>Total Contributions: {contributionData?.user.contributionsCollection.contributionCalendar.totalContributions}</p>
+            <p>Total Number: {contributionData?.user.contributionsCollection.contributionCalendar.weeks[52].contributionDays[0].contributionCount}</p>
+            <p>Total String: {contributionData?.user.contributionsCollection.contributionCalendar.weeks[52].contributionDays[0].date}</p>
+
 
         </div>
     );

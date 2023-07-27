@@ -5,3 +5,14 @@
 .count {
     padding: 1rem;
 }
+
+
+
+.css-iael1t-MuiChartsAxis-root.MuiChartsAxis-bottom .MuiChartsAxis-tickLabel,
+.css-iael1t-MuiChartsAxis-root.MuiChartsAxis-bottom .MuiChartsAxis-label {
+    alignment-baseline: hanging;
+    text-anchor: middle;
+    text-overflow: ellipsis;
+    /* font-size: xx-large; */
+    display: none;
+}

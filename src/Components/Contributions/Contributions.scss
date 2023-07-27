@@ -1,3 +1,8 @@
+@use '../../styles/colours.scss' as *;
+@use '../../styles/conversions.scss' as *;
+@use '../../styles/global.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
 .date {
     padding: 1rem;
 }
@@ -6,13 +11,30 @@
     padding: 1rem;
 }
 
+.css-iael1t-MuiChartsAxis-root.MuiChartsAxis-bottom {
 
 
-.css-iael1t-MuiChartsAxis-root.MuiChartsAxis-bottom .MuiChartsAxis-tickLabel,
-.css-iael1t-MuiChartsAxis-root.MuiChartsAxis-bottom .MuiChartsAxis-label {
-    alignment-baseline: hanging;
-    text-anchor: middle;
-    text-overflow: ellipsis;
-    /* font-size: xx-large; */
-    display: none;
+    & .MuiChartsAxis-tickLabel,
+    & .MuiChartsAxis-label {
+
+        alignment-baseline: mathematical !important;
+        text-anchor: revert !important;
+        text-overflow: ellipsis;
+        transform: rotate(90deg);
+    }
+
+
+}
+
+.css-1vuxth3-MuiBarElement-root {
+    fill: $graph-a !important;
+}
+
+.css-9foxff-MuiChartsAxis-line,
+.css-2jrcws-MuiChartsAxis-tick {
+    stroke: $graph-line !important;
+}
+
+.css-z411iq-MuiChartsAxis-tickLabel {
+    fill: $graph-label !important;
 }

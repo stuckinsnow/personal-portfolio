@@ -37,7 +37,7 @@ const Contributions: React.FC = () => {
         setError(null);
     };
 
-    console.log(contributionData);
+    console.log(userName);
 
     return (
         <div className='footer'>

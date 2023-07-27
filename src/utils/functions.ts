@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { graphql } from '@octokit/graphql';
 
 export const useDocumentTitle = (title: string): void => {
   useEffect(() => {

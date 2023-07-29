@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
       </div>
       <Contributions />
 
-      {/* <Repositories /> */}
+      <Repositories />
     </>
   );
 };

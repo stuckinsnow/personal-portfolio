@@ -7,8 +7,8 @@ import './Contributions.scss';
 
 
 const Contributions: React.FC = () => {
-    let token = process.env.REACT_APP_API_KEY || '';
-    let userName = process.env.REACT_APP_USERNAME || '';
+    const token = process.env.REACT_APP_API_KEY || '';
+    const userName = process.env.REACT_APP_USERNAME || '';
 
     const [contributionData, setContributionData] = useState<ContributionData | null>(null);
     const [error, setError] = useState<string | null>(null);

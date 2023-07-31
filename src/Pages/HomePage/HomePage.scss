@@ -10,3 +10,24 @@
     justify-content: center;
     gap: 1rem;
 }
+
+#profile {
+    width: 30%;
+}
+
+.info {
+    padding: 4rem;
+    margin-bottom: 8rem;
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    &__subtitle {
+        font-size: 1rem;
+    }
+
+    &__description {
+        font-size: 0.8rem;
+    }
+}

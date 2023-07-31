@@ -4,8 +4,8 @@ export const animateButton = (e: React.MouseEvent<HTMLLIElement>) => {
     ripple.classList.add("ripple");
 
     const rect = target.getBoundingClientRect();
-    const x = e.clientX - rect.left - 96;
-    const y = e.clientY - rect.top - 96;
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
 
     ripple.style.left = `${x}px`;
     ripple.style.top = `${y}px`;

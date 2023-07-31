@@ -4,63 +4,9 @@
 @use '../../styles/mixins.scss' as *;
 
 
-
-.divider {
-    width: 100%;
-    box-sizing: border-box;
-
+#main {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    background-color: rgba(255, 0, 0, 0);
-}
-
-.dividerd {
-    // height: 40%;
-    height: 4rem;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    display: flex;
-    background: rgba(255, 255, 255, 0.47);
-    box-shadow: 0 $px3 $px30 rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur($px5);
-    -webkit-backdrop-filter: blur($px5);
-    border: thin solid rgba(255, 183, 247, 0.03);
-    justify-content: center;
-    align-items: flex-end;
-
-    position: absolute;
-    z-index: 1;
-
-}
-
-.fun {
-    display: flex;
     gap: 1rem;
-    // margin-top: 0.5rem;
-    z-index: 0;
-
-    &__item {
-        width: 6rem;
-        height: 4rem;
-        background: rgba(255, 183, 247, 0.09);
-        border-radius: 0.75rem;
-        box-shadow: 0 $px5 $px30 rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(0.5rem);
-        -webkit-backdrop-filter: blur(0.5rem);
-        border: thin solid rgba(255, 183, 247, 0.3);
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-        overflow: hidden;
-
-        &:hover {
-            margin-top: 3rem;
-        }
-    }
 }

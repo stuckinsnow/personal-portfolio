@@ -15,11 +15,14 @@
     width: 100%;
     display: flex;
 
-    &__item,
-    &__item:active {
+    &__item a,
+    &__item a:active {
+        color: $color-a;
+        text-decoration: none;
+    }
 
-        color: red;
-
+    &__item:hover {
+        text-decoration: underline;
     }
 
     &__item:nth-child(odd) {

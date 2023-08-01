@@ -21,7 +21,7 @@ const Contributions: React.FC = () => {
                     const data = await fetchContributions(token, userName);
                     setContributionData(data);
                     setError(null);
-                    console.log(contributionData);
+                    // console.log(contributionData);
                 } catch (error) {
                     console.error('Error fetching GitHub contribution data:', error);
                     setError('An error occurred while fetching GitHub contribution data.');
@@ -62,7 +62,7 @@ const Contributions: React.FC = () => {
     const xAxisData = [...weeklyContributions.map((week) => week.count)].reverse();
     const yAxisData = [...weeklyContributions.map((week) => week.date)].reverse();
 
-    console.log(xAxisData);
+    // console.log(xAxisData);
 
     return (
         <div>

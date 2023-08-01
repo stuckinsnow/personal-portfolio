@@ -1,4 +1,4 @@
-const projects = [
+const projectData = [
     {
         date: "July 2023",
         name: "Portfolio",
@@ -14,7 +14,7 @@ const projects = [
         type: "Hackathon",
         technology: ["Sass", "JavaScript", "React"],
         link: "https://github.com/stuckinsnow",
-        image: "https://",
+        image: "https://i.imgur.com/zXsuCXi.jpg",
         desc: "1st Place, Cross Disciplinery Hackathon Project for EA Sports. Train your digital twin!"
     },
     {
@@ -47,4 +47,5 @@ const projects = [
 
 
 ]
-export default projects;
+
+export default projectData;

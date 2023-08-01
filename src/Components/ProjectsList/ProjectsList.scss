@@ -1,0 +1,29 @@
+@use '../../styles/colours.scss' as *;
+@use '../../styles/conversions.scss' as *;
+@use '../../styles/global.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.projects-table {
+
+    &__image {
+        width: 6rem;
+        height: 4rem;
+    }
+
+    &__link {
+        width: 4rem;
+        background-color: red;
+    }
+
+    tr {
+        color: $color-q;
+        background-color: $color-c;
+    }
+
+    th {
+        color: $color-q;
+        font-weight: normal;
+        background-color: $color-d;
+    }
+
+}

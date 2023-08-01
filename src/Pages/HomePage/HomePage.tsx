@@ -7,32 +7,23 @@ import ProjectsList from '../../Components/ProjectsList/ProjectsList';
 const HomePage: React.FC = () => {
   useDocumentTitle('Home Page');
 
-
-
   return (
-    <>
-
-      <div id="main">
-
-        <div id="profile">
-          <section className="info">
-            <h1 className="info__title">Name Here</h1>
-            <h2 className="info__subtitle">Full-Stack Web Developer</h2>
-            <p className="info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate ratione nisi, libero earum ut ducimus inventore velit optio! Expedita.</p>
-          </section>
-        </div>
-
-        <div className='components'>
-          <ProjectsList />
-          <Contributions />
-          <Repositories />
-        </div>
-
-
+    <div id="main">
+      <div id="profile">
+        <section className="info">
+          <h1 className="info__title">Name Here</h1>
+          <h2 className="info__subtitle">Full-Stack Web Developer</h2>
+          <p className="info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate ratione nisi, libero earum ut ducimus inventore velit optio! Expedita.</p>
+        </section>
       </div>
 
+      <div className='components'>
+        <Contributions />
+        <Repositories />
+        <ProjectsList />
+      </div>
 
-    </>
+    </div>
   );
 };
 

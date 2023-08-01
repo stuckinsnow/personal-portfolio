@@ -5,7 +5,7 @@ const projectData = [
         type: "Personal Project",
         technology: ["React", "TypeScript", "GraphQL", "Apollo", "Material UI", "Node.JS", "AWS", "SASS"],
         link: "https://github.com/stuckinsnow",
-        image: "https://",
+        image: "",
         desc: "A personal web developer portfolio"
     },
     {
@@ -13,7 +13,7 @@ const projectData = [
         name: "EA - Apex Digital Twin",
         type: "Hackathon",
         technology: ["Sass", "JavaScript", "React"],
-        link: "https://github.com/stuckinsnow",
+        link: "https://github.com/stuckinsnow/ea-sports-digital-twin",
         image: "https://i.imgur.com/zXsuCXi.jpg",
         desc: "1st Place, Cross Disciplinery Hackathon Project for EA Sports. Train your digital twin!"
     },
@@ -40,12 +40,10 @@ const projectData = [
         name: "Brainflix",
         type: "Personal - BrainStation Bootcamp",
         technology: ["React", "Node.js", "Express.js"],
-        link: "",
+        link: "https://github.com/stuckinsnow/brainstation-brainflix",
         image: "https://i.imgur.com/ORYIJYm.jpg",
         desc: "Video streaming app"
     },
-
-
 ]
 
 export default projectData;

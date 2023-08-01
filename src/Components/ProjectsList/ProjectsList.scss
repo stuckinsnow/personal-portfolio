@@ -3,27 +3,50 @@
 @use '../../styles/global.scss' as *;
 @use '../../styles/mixins.scss' as *;
 
-.projects-table {
+.projects-card {
 
-    &__image {
-        width: 6rem;
-        height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem;
+
+    &__group {
+        width: 75%;
+        flex-direction: column;
+        padding: 1rem;
+        // background-color: $color-l;
+        width: 20rem;
+    }
+
+    &__item {
+        margin-top: 1rem;
+
+        &--double {
+            display: flex;
+            justify-content: space-between;
+
+        }
     }
 
     &__link {
-        width: 4rem;
-        background-color: red;
+        color: $color-a;
+        text-decoration: none;
+
+        &--title {
+            margin: 0;
+            margin-top: 0;
+            margin-bottom: 1rem;
+
+        }
     }
 
-    tr {
-        color: $color-q;
-        background-color: $color-c;
+    &__image {
+        width: 15rem;
+        padding: 1rem;
+        object-fit: cover;
     }
 
-    th {
-        color: $color-q;
-        font-weight: normal;
-        background-color: $color-d;
+    &:hover &__image {
+        // top: 0;
     }
-
 }

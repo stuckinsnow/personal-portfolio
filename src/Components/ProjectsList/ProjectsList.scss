@@ -16,7 +16,6 @@
         width: 75%;
         flex-direction: column;
         padding: 1rem;
-        // background-color: $color-l;
         width: 20rem;
     }
 
@@ -27,6 +26,28 @@
             display: flex;
             justify-content: space-between;
 
+        }
+
+
+    }
+
+    &__tech {
+        display: flex;
+        flex-wrap: wrap;
+
+        &--list {
+            background-color: $color-l;
+            border-radius: 0.25rem;
+            padding: 0.5rem;
+            margin: 0.25rem 0.25rem;
+        }
+
+        &--react {
+            background-color: $color-a;
+        }
+
+        &--sass {
+            background-color: red;
         }
     }
 

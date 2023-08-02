@@ -5,7 +5,8 @@ const projectData = [
         type: "Personal Project",
         technology: ["React", "TypeScript", "GraphQL", "Apollo", "Material UI", "Node.JS", "AWS", "SASS"],
         link: "https://github.com/stuckinsnow",
-        image: "",
+        image: "https://i.imgur.com/zXsuCXi.jpg",
+        // image: "",
         desc: "A personal web developer portfolio"
     },
     {
@@ -23,7 +24,8 @@ const projectData = [
         type: "Team - BrainStation Bootcamp",
         technology: ["MySQL", "knex.js", "React"],
         link: "https://github.com/InStock-Group4/intock-client",
-        image: "https://i.imgur.com/7B7HSP6.jpg",
+        // image: "https://i.imgur.com/7B7HSP6.jpg",
+        image: "https://i.imgur.com/zXsuCXi.jpg",
         desc: "I worked with others to create an inventory management system"
     },
     {
@@ -32,7 +34,8 @@ const projectData = [
         type: "Hackathon",
         technology: ["React", "Node.js", "Express.js"],
         link: "https://github.com/pichsophaneatdy/Tasty-Eats/tree/main",
-        image: "https://i.imgur.com/2KcpcFq.jpg",
+        image: "https://i.imgur.com/zXsuCXi.jpg",
+        // image: "https://i.imgur.com/2KcpcFq.jpg",
         desc: "I worked in collaboration with others to create a recipe generator and meal planner"
     },
     {
@@ -41,7 +44,8 @@ const projectData = [
         type: "Personal - BrainStation Bootcamp",
         technology: ["React", "Node.js", "Express.js"],
         link: "https://github.com/stuckinsnow/brainstation-brainflix",
-        image: "https://i.imgur.com/ORYIJYm.jpg",
+        image: "https://i.imgur.com/zXsuCXi.jpg",
+        // image: "https://i.imgur.com/ORYIJYm.jpg",
         desc: "Video streaming app"
     },
 ]

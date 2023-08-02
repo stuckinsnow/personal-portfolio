@@ -8,6 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 1rem;
 
     &__group {
@@ -28,16 +30,16 @@
         }
     }
 
+    &__title {
+        width: 100%;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
     &__link {
         color: $color-a;
         text-decoration: none;
-
-        &--title {
-            margin: 0;
-            margin-top: 0;
-            margin-bottom: 1rem;
-
-        }
     }
 
     &__image {

@@ -1,5 +1,4 @@
 @use './conversions.scss' as *;
-@use './global.scss' as *;
 @use './mixins.scss' as *;
 
 $color-a: #002b36;
@@ -35,8 +34,10 @@ $graph-a: #93a1a1;
 $graph-label: #586e7565;
 $graph-line: #eee8d5;
 
+// projects component 
 
-
+$projects-card-bg: #f4f4f4;
+$projects-title-bg: #d3d3d31f;
 
 // technologies
 

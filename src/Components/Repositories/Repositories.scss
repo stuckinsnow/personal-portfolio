@@ -5,14 +5,13 @@
 
 .c-repositories {
     box-sizing: border-box;
-
+    width: 60%;
 }
 
 
 .repo-list {
 
     list-style-type: none;
-    width: 100%;
     display: flex;
 
     &__item a,

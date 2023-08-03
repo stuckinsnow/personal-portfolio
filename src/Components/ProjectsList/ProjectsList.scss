@@ -5,8 +5,9 @@
 .projects-card {
 
     width: 70%;
+    color: $color-a;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: left;
     flex-direction: row;
     flex-wrap: wrap;
@@ -23,7 +24,8 @@
         box-sizing: border-box;
         flex-direction: column;
         padding: 1rem;
-        padding-top: 0;
+        padding-left: 0;
+        padding-top: 0.25rem;
     }
 
     &__double {
@@ -33,11 +35,14 @@
         flex-direction: column;
         align-items: flex-end;
         margin-top: -1.5rem;
+        justify-content: flex-start;
 
         &--type {}
 
         &--date {
-            width: 30%;
+            width: 6rem;
+            font-size: 0.75rem;
+            color: $color-a-low-op;
             text-align: end;
             text-transform: uppercase;
         }
@@ -48,15 +53,21 @@
         margin-top: 1rem;
         // width: 60%;
         margin-top: 0.25rem;
+        color: $tech-writing;
     }
 
     &__tech {
         display: flex;
         flex-wrap: wrap;
         // width: 60%;
+        margin-top: -0.5rem;
+        padding: 0.75rem;
+        padding-top: 0;
 
         &--list {
             font-size: 0.8rem;
+            height: 0.75rem;
+            line-height: 0.75rem;
             font-weight: 500;
             background-color: $color-l;
             border-radius: 0.75rem;
@@ -65,7 +76,7 @@
         }
 
         &--apollo {
-            color: $technology-bright;
+            color: $technology-dark;
             background-color: $apollo-label;
 
         }
@@ -76,12 +87,12 @@
         }
 
         &--express-js {
-            color: $technology-bright;
+            color: $technology-dark;
             background-color: $express-js-label;
         }
 
         &--graphql {
-            color: $technology-bright;
+            color: $technology-dark;
             background-color: $graphql-label;
         }
 
@@ -91,42 +102,42 @@
         }
 
         &--knex-js {
-            color: $technology-bright;
+            color: $technology-dark;
             background-color: $knex-js-label;
         }
 
         &--material-ui {
-            color: $technology-bright;
+            color: $technology-dark;
             background-color: $material-ui-label;
         }
 
         &--mysql {
-            color: $technology-bright;
+            color: $technology-dark;
             background-color: $mysql-label;
         }
 
         &--next-js {
-            color: $technology-bright;
+            color: $technology-dark;
             background-color: $next-js-label;
         }
 
         &--node-js {
-            color: $technology-bright;
+            color: $technology-dark;
             background-color: $node-js-label;
         }
 
         &--react {
-            color: $technology-bright;
+            color: $technology-dark;
             background-color: $react-label;
         }
 
         &--sass {
-            color: $technology-bright;
+            color: $technology-dark;
             background-color: $sass-label;
         }
 
         &--typescript {
-            color: $technology-bright;
+            color: $technology-dark;
             background-color: $typescript-label;
         }
 
@@ -152,10 +163,15 @@
         box-sizing: border-box;
         object-fit: cover;
         padding: 1rem;
-        padding-right: 0;
+        margin-top: -0.5rem;
+        opacity: 0.2;
+        transition: opacity 0.125s ease-in-out;
+        border-radius: 1.5rem;
+
     }
 
     &:hover &__image {
         // top: 0;
+        opacity: 1;
     }
 }

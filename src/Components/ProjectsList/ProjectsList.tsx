@@ -16,7 +16,14 @@ const ProjectsList: React.FC = () => {
                         </Link>
                     </h3>
 
-                    <img className='projects-card__image' src={projectData.image || 'missing'} alt={projectData.name} />
+                    {/* <div className="projects-card__image"> */}
+
+                    <img
+                        className='projects-card__image'
+                        src={projectData.image || 'missing'} alt={projectData.name} />
+
+                    {/* </div> */}
+
 
                     <div className='projects-card__group'>
                         <div className='projects-card__double'>
@@ -28,11 +35,12 @@ const ProjectsList: React.FC = () => {
                             </span>
                         </div>
                         <div className='projects-card__item'>{projectData.desc}</div>
-                        <div className='projects-card__item projects-card__tech'>
-                            {projectData.technology.map((tech, index) => (
-                                <span key={index} className={'projects-card__tech--list' + ' ' + 'projects-card__tech--' + tech.toLowerCase().replace(/[.\s]+/g, '-')} >{tech}</span>
-                            ))}
-                        </div>
+
+                    </div>
+                    <div className='projects-card__item projects-card__tech'>
+                        {projectData.technology.map((tech, index) => (
+                            <span key={index} className={'projects-card__tech--list' + ' ' + 'projects-card__tech--' + tech.toLowerCase().replace(/[.\s]+/g, '-')} >{tech}</span>
+                        ))}
                     </div>
 
                 </section>

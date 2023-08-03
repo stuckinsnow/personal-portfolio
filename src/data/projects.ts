@@ -26,7 +26,7 @@ const projectData = [
         link: "https://github.com/InStock-Group4/intock-client",
         // image: "https://i.imgur.com/7B7HSP6.jpg",
         image: "https://i.imgur.com/zXsuCXi.jpg",
-        desc: "I worked with others to create an inventory management system"
+        desc: "I worked with others to create an inventory management system."
     },
     {
         date: "May 2023",

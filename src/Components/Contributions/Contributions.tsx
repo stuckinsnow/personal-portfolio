@@ -90,7 +90,7 @@ const Contributions: React.FC = () => {
                         width={500} height={300} />
                 </>
             )}
-            <p>Total Contributions: {contributionData?.user.contributionsCollection.contributionCalendar.totalContributions}</p>
+            {/* <p>Total Contributions: {contributionData?.user.contributionsCollection.contributionCalendar.totalContributions}</p> */}
         </div>
     );
 };

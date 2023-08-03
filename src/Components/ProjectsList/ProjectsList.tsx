@@ -19,7 +19,14 @@ const ProjectsList: React.FC = () => {
                     <img className='projects-card__image' src={projectData.image || 'missing'} alt={projectData.name} />
 
                     <div className='projects-card__group'>
-                        <div className='projects-card__item--double'>{projectData.type} <span>{projectData.date}</span></div>
+                        <div className='projects-card__double'>
+                            <span className="projects-card__double--type">
+                                {projectData.type}
+                            </span>
+                            <span className="projects-card__double--date">
+                                {projectData.date}
+                            </span>
+                        </div>
                         <div className='projects-card__item'>{projectData.desc}</div>
                         <div className='projects-card__item projects-card__tech'>
                             {projectData.technology.map((tech, index) => (

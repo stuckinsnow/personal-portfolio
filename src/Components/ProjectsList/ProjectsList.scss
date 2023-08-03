@@ -19,14 +19,23 @@
         width: 20rem;
     }
 
+    &__double {
+        display: flex;
+        justify-content: space-between;
+
+        &--type {
+            font-weight: 700;
+        }
+
+        &--date {
+            width: 30%;
+        }
+    }
+
+
     &__item {
         margin-top: 1rem;
 
-        &--double {
-            display: flex;
-            justify-content: space-between;
-
-        }
 
 
     }
@@ -44,54 +53,68 @@
         }
 
         &--apollo {
+            color: $technology-bright;
             background-color: $apollo-label;
+
         }
 
         &--aws {
+            color: $technology-dark;
             background-color: $aws-label;
         }
 
         &--express-js {
+            color: $technology-bright;
             background-color: $express-js-label;
         }
 
         &--graphql {
+            color: $technology-bright;
             background-color: $graphql-label;
         }
 
         &--javascript {
+            color: $technology-dark;
             background-color: $javascript-label;
         }
 
         &--knex-js {
+            color: $technology-bright;
             background-color: $knex-js-label;
         }
 
         &--material-ui {
+            color: $technology-bright;
             background-color: $material-ui-label;
         }
 
         &--mysql {
+            color: $technology-bright;
             background-color: $mysql-label;
         }
 
         &--next-js {
+            color: $technology-bright;
             background-color: $next-js-label;
         }
 
         &--node-js {
+            color: $technology-bright;
             background-color: $node-js-label;
         }
 
         &--react {
+            color: $technology-bright;
             background-color: $react-label;
         }
 
         &--sass {
+            color: $technology-bright;
             background-color: $sass-label;
         }
 
         &--typescript {
+            color: $technology-bright;
             background-color: $typescript-label;
         }
 

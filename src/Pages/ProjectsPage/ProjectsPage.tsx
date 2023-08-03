@@ -1,6 +1,7 @@
 import './ProjectsPage.scss';
 import { useDocumentTitle } from '../../utils/functions';
 import ProjectsList from '../../Components/ProjectsList/ProjectsList';
+import Contributions from '../../Components/Contributions/Contributions';
 
 const ProjectsPage: React.FC = () => {
     useDocumentTitle('Projects Page');
@@ -8,6 +9,8 @@ const ProjectsPage: React.FC = () => {
 
     return (
         <>
+
+            <Contributions />
             <ProjectsList />
         </>
     )

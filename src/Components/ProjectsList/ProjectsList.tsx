@@ -16,14 +16,7 @@ const ProjectsList: React.FC = () => {
                         </Link>
                     </h3>
 
-                    {/* <div className="projects-card__image"> */}
-
-                    <img
-                        className='projects-card__image'
-                        src={projectData.image || 'missing'} alt={projectData.name} />
-
-                    {/* </div> */}
-
+                    <img className='projects-card__image' src={projectData.image || 'missing'} alt={projectData.name} />
 
                     <div className='projects-card__group'>
                         <div className='projects-card__double'>

@@ -1,6 +1,6 @@
 import './HomePage.scss';
 import { useDocumentTitle } from '../../utils/functions';
-import Contributions from '../../Components/Contributions/Contributions';
+// import Contributions from '../../Components/Contributions/Contributions';
 import Repositories from '../../Components/Repositories/Repositories';
 
 const HomePage: React.FC = () => {
@@ -18,7 +18,6 @@ const HomePage: React.FC = () => {
       </div>
 
       <div className='components'>
-        <Contributions />
         <Repositories />
       </div>
 

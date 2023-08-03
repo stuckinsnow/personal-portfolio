@@ -4,16 +4,20 @@
 
 .projects-card {
 
-    width: 70%;
+    width: 100%;
     color: $color-a;
     display: flex;
     align-items: flex-start;
     justify-content: left;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1rem;
     transition: background-color 0.125s ease-in-out;
     border-radius: 0.5rem;
+
+    @include desktop {
+        margin: 1rem;
+        width: 70%;
+    }
 
     &:hover {
         background-color: $projects-card-bg;

@@ -6,8 +6,13 @@
 .c-repositories {
     box-sizing: border-box;
     width: 60%;
-}
 
+    display: none;
+
+    @include tablet {
+        display: flex;
+    }
+}
 
 .repo-list {
 

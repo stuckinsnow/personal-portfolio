@@ -65,7 +65,7 @@ const Contributions: React.FC = () => {
     // console.log(xAxisData);
 
     return (
-        <div>
+        <div className='c-contributions'>
             <Snackbar open={!!error} autoHideDuration={6000} onClose={handleSnackbarClose}>
                 <MuiAlert elevation={6} variant="filled" severity="error" onClose={handleSnackbarClose}>
                     {error}

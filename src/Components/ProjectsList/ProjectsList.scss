@@ -36,19 +36,65 @@
         flex-wrap: wrap;
 
         &--list {
+            font-weight: 500;
             background-color: $color-l;
-            border-radius: 0.25rem;
+            border-radius: 0.5rem;
             padding: 0.5rem;
-            margin: 0.25rem 0.25rem;
+            margin: 0.125rem 0.125rem;
+        }
+
+        &--apollo {
+            background-color: $apollo-label;
+        }
+
+        &--aws {
+            background-color: $aws-label;
+        }
+
+        &--express-js {
+            background-color: $express-js-label;
+        }
+
+        &--graphql {
+            background-color: $graphql-label;
+        }
+
+        &--javascript {
+            background-color: $javascript-label;
+        }
+
+        &--knex-js {
+            background-color: $knex-js-label;
+        }
+
+        &--material-ui {
+            background-color: $material-ui-label;
+        }
+
+        &--mysql {
+            background-color: $mysql-label;
+        }
+
+        &--next-js {
+            background-color: $next-js-label;
+        }
+
+        &--node-js {
+            background-color: $node-js-label;
         }
 
         &--react {
-            background-color: $color-a;
+            background-color: $react-label;
         }
 
         &--sass {
-            background-color: red;
+            background-color: $sass-label;
         }
+
+        &--typescript {
+            background-color: $typescript-label;
+        }
+
     }
 
     &__title {

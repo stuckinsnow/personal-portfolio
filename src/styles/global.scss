@@ -1,3 +1,5 @@
+@use './colours.scss' as *;
+
 * {
     font-family: 'Inter';
     padding: 0;
@@ -47,4 +49,18 @@ body {
     top: 0;
     left: 0;
     pointer-events: none;
+}
+
+@keyframes glow {
+    0% {
+        color: $color-a;
+    }
+
+    50% {
+        color: $color-d;
+    }
+
+    100% {
+        color: $color-a;
+    }
 }

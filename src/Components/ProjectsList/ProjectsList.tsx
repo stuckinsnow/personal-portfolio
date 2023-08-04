@@ -11,7 +11,7 @@ const ProjectsList: React.FC = () => {
 
                 <div className="projects-card" key={index}>
 
-                    <div className="projects-title-bar">
+                    <section className="projects-title-bar">
                         <h3 className='projects-title-bar__head'>
                             <Link className='projects-title-bar__link' to={projectData.link} target='/'>
                                 {projectData.name}
@@ -26,7 +26,7 @@ const ProjectsList: React.FC = () => {
                                 {projectData.date}
                             </span>
                         </p>
-                    </div>
+                    </section>
 
 
                     <img className='projects-card__image' src={projectData.image || 'missing'} alt={projectData.name} />

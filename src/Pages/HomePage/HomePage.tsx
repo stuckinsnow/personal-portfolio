@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
 
       <div className='components'>
         {/* <Repositories /> */}
-        <Contributions />
+        {/* <Contributions /> */}
         <ProjectsList />
       </div>
 

@@ -9,34 +9,36 @@ const ProjectsList: React.FC = () => {
         <div id="c-projects" className='projects'>
             {projectData.map((projectData, index) => (
 
-                <section className="projects-card" key={index}>
-                    <h3 className='projects-card__title'>
-                        <Link className='projects-card__link' to={projectData.link} target='/'>
-                            {projectData.name}
-                        </Link>
-                    </h3>
+                <div className="projects-card" key={index}>
 
-                    <img className='projects-card__image' src={projectData.image || 'missing'} alt={projectData.name} />
+                    <div className="projects-title-bar">
+                        <h3 className='projects-title-bar__head'>
+                            <Link className='projects-title-bar__link' to={projectData.link} target='/'>
+                                {projectData.name}
+                            </Link>
+                        </h3>
 
-                    <div className='projects-card__group'>
-                        <div className='projects-card__double'>
-                            <span className="projects-card__double--type">
+                        <p className='projects-title-bar__group'>
+                            <span className="projects-title-bar__group--type">
                                 {projectData.type}
                             </span>
-                            <span className="projects-card__double--date">
+                            <span className="projects-title-bar__group--date">
                                 {projectData.date}
                             </span>
-                        </div>
-                        <div className='projects-card__item'>{projectData.desc}</div>
-
+                        </p>
                     </div>
+
+
+                    <img className='projects-card__image' src={projectData.image || 'missing'} alt={projectData.name} />
+                    <p className='projects-card__description'>{projectData.desc}</p>
+
                     <div className='projects-card__item projects-card__tech'>
                         {projectData.technology.map((tech, index) => (
-                            <span key={index} className={'projects-card__tech--list' + ' ' + 'projects-card__tech--' + tech.toLowerCase().replace(/[.\s]+/g, '-')} >{tech}</span>
+                            <span key={index} className={'projects-card__tech--list-item' + ' ' + 'projects-card__tech--' + tech.toLowerCase().replace(/[.\s]+/g, '-')} >{tech}</span>
                         ))}
                     </div>
 
-                </section>
+                </div>
             ))}
 
         </div >

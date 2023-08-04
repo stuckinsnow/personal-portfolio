@@ -9,7 +9,6 @@ const ProjectsPage: React.FC = () => {
 
     return (
         <>
-
             <Contributions />
             <ProjectsList />
         </>

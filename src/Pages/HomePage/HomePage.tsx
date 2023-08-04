@@ -2,6 +2,8 @@ import './HomePage.scss';
 import { useDocumentTitle } from '../../utils/functions';
 // import Contributions from '../../Components/Contributions/Contributions';
 import Repositories from '../../Components/Repositories/Repositories';
+import ProjectsList from '../../Components/ProjectsList/ProjectsList';
+import Contributions from '../../Components/Contributions/Contributions';
 
 const HomePage: React.FC = () => {
   useDocumentTitle('Home Page');
@@ -15,10 +17,13 @@ const HomePage: React.FC = () => {
           <p className="info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate ratione nisi, libero earum ut ducimus inventore velit optio! Expedita.</p>
 
         </section>
+
       </div>
 
       <div className='components'>
-        <Repositories />
+        {/* <Repositories /> */}
+        <Contributions />
+        <ProjectsList />
       </div>
 
     </div>

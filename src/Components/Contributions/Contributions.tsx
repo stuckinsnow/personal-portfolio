@@ -87,7 +87,8 @@ const Contributions: React.FC = () => {
                             data: xAxisData, // count
                         },
                         ]}
-                        width={500} height={300} />
+                    // width={500} height={300} 
+                    />
                 </>
             )}
             {/* <p>Total Contributions: {contributionData?.user.contributionsCollection.contributionCalendar.totalContributions}</p> */}

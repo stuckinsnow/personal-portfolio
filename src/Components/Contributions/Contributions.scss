@@ -3,7 +3,9 @@
 @use '../../styles/mixins.scss' as *;
 
 .c-contributions {
-    display: none;
+    // display: none;
+    width: 100%;
+    height: 20rem;
 
     @include tablet {
         display: flex;

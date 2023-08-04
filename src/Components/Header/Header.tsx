@@ -73,9 +73,9 @@ const Header: React.FC = () => {
 
       {/* Hamburger menu */}
       <div className={`hamburger ${isHamburgerOpen ? 'active' : ''}`} onClick={toggleHamburger}>
-        <span className="hamburger__bar hamburger__bar-1"></span>
+        {/* <span className="hamburger__bar hamburger__bar-1"></span>
         <span className="hamburger__bar hamburger__bar-2"></span>
-        <span className="hamburger__bar hamburger__bar-3"></span>
+        <span className="hamburger__bar hamburger__bar-3"></span> */}
       </div>
     </div>
   );

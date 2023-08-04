@@ -3,6 +3,13 @@
 @use '../../styles/global.scss' as *;
 @use '../../styles/mixins.scss' as *;
 
+
+#c-header {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 .head-logo {
     text-decoration: none;
     position: absolute;
@@ -14,7 +21,6 @@
 
     &__list {
         display: flex;
-        gap: 2rem;
 
     }
 

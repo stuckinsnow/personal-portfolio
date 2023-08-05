@@ -2,6 +2,10 @@
 @use '../../styles/conversions.scss' as *;
 @use '../../styles/mixins.scss' as *;
 
+#c-projects {
+    padding: 1rem;
+}
+
 .projects-card {
 
     // width: 100%;
@@ -15,14 +19,18 @@
 
     padding: 0.5rem;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     box-sizing: border-box;
     border: thin solid $color-g;
 
     opacity: 0.8;
+    height: 3rem;
+    overflow: hidden;
 
     &:hover {
         opacity: 1;
+        height: 10rem;
+        // order: -1;
     }
 
     &:nth-child(odd) {
@@ -130,14 +138,14 @@
         color: $color-c;
         width: 75%;
         box-sizing: border-box;
-        text-align: end;
+        // text-align: end;
         padding: 0.5rem;
-        margin-left: auto;
+        // margin-left: auto;
         margin-top: 0;
         font-weight: 500;
 
         @include desktop {
-            width: 50%;
+            width: 75%;
         }
     }
 

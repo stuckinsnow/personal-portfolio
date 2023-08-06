@@ -16,7 +16,6 @@ interface ProjectData {
 const ProjectsList: React.FC = () => {
     const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(null);
     const activeProjectRef = useRef<HTMLDivElement>(null);
-    const defaultHeight = '3rem';
 
     const toggleActiveClass = (index: number) => {
         setActiveProjectIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -32,7 +31,8 @@ const ProjectsList: React.FC = () => {
                 activeDiv.style.maxHeight = `${height}px`;
                 activeDiv.classList.add('expanded');
             } else {
-                activeDiv.style.maxHeight = defaultHeight;
+                const height: any = activeDiv.scrollHeight; // Set type to 'any'
+                activeDiv.style.maxHeight = height;
                 activeDiv.classList.remove('expanded');
             }
         }
@@ -44,7 +44,7 @@ const ProjectsList: React.FC = () => {
                 <div
                     ref={activeProjectIndex === index ? activeProjectRef : null}
                     className={`projects-card ${activeProjectIndex === index ? 'active expanded' : ''}`}
-                    style={{ maxHeight: activeProjectIndex === index ? activeProjectRef.current?.scrollHeight + 'px' : defaultHeight }}
+                    style={{ maxHeight: activeProjectIndex === index ? activeProjectRef.current?.scrollHeight + 'px' : '' }}
                     data-index={index}
                     key={index}
                     onClick={() => toggleActiveClass(index)}

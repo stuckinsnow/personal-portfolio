@@ -64,3 +64,17 @@ body {
         color: $color-a;
     }
 }
+
+@keyframes bright-glow {
+    0% {
+        color: $color-a;
+    }
+
+    50% {
+        color: $color-l;
+    }
+
+    100% {
+        color: $color-a;
+    }
+}

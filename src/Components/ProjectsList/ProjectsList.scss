@@ -74,6 +74,10 @@
             text-decoration: none;
         }
 
+        &__link:hover {
+            animation: bright-glow 1s ease-out;
+        }
+
         &__group {
             display: flex;
             flex-direction: column;

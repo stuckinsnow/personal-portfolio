@@ -4,6 +4,7 @@
 
 #c-projects {
     padding: 1rem;
+    padding-top: 0;
 }
 
 .projects-card {
@@ -126,16 +127,17 @@
 
     &__description {
         color: $color-c;
-        width: 75%;
         box-sizing: border-box;
         // text-align: end;
         padding: 0.5rem;
+        padding-bottom: 0.4rem;
         // margin-left: auto;
         margin-top: 0;
         font-weight: 500;
 
-        @include desktop {
+        @include tablet {
             width: 75%;
+            padding-bottom: 0.5rem;
         }
     }
 

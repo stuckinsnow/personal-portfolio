@@ -3,7 +3,7 @@ import "./ProjectsList.scss"
 import projectData from "../../data/projects"
 import { Link } from "react-router-dom"
 import { useEffect, useRef, useState } from "react"
-import { toggleActiveClass, handleActiveProject } from "../../utils/elements" // Corrected import path
+import { toggleActiveClass, handleActiveProject } from "../../utils/animations" // Corrected import path
 
 interface ProjectData {
 	link: string

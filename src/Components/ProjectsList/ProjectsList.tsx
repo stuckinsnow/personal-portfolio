@@ -21,7 +21,6 @@ const ProjectsList: React.FC = () => {
 
 	useEffect(() => {
 		handleActiveProject(activeProjectRef, activeProjectIndex)
-        console.log('load');
 	}, [activeProjectIndex, activeProjectRef])
 
 	return (

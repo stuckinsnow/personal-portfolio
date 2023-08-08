@@ -17,13 +17,13 @@
     }
 }
 
-.components {
+// .components {
 
-    @include desktop {
-        width: 40%;
-        padding: 0;
-    }
-}
+//     @include desktop {
+//         width: 40%;
+//         padding: 0;
+//     }
+// }
 
 #profile {
     width: 100%;
@@ -45,14 +45,20 @@
     padding: 1rem;
     // padding: 2rem;
     width: 90%;
-    // border: thin solid #eee8d5;
     border-radius: 0.5rem;
     box-sizing: border-box;
+    border: thin solid $color-g;
+
+    // background: $color-l;
+    box-shadow: $shadow-card;
+    backdrop-filter: blur($px5);
+    -webkit-backdrop-filter: blur($px5);
+    z-index: 2;
 
     // box-shadow: $shadow-main;
 
     @include desktop {
-        padding: 0;
+        padding: 1rem;
         // margin-bottom: 8rem;
     }
 
@@ -70,5 +76,19 @@
         margin-top: 0.2rem;
         font-size: 0.8rem;
         color: $tech-writing;
+    }
+}
+
+.links {
+    &__link {
+        border: thin solid $color-g;
+        border-radius: 0.5rem;
+        background-color: $color-l-low-op;
+        width: 10rem;
+        height: 4rem;
+        position: absolute;
+        margin-top: -2rem;
+        top: auto;
+        z-index: -2;
     }
 }

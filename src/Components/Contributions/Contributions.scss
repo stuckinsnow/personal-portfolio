@@ -6,6 +6,9 @@
     // display: none;
     width: 100%;
     height: 20rem;
+    border: thin solid $color-g;
+    border-radius: 0.5rem;
+    overflow: hidden;
 
     @include tablet {
         display: flex;
@@ -14,19 +17,24 @@
     }
 }
 
-.date {
-    padding: 1rem;
-}
-
+.date,
 .count {
     padding: 1rem;
 }
 
-.css-1k09df2-MuiChartsLegend-root {
+.css-l0h214-MuiResponsiveChart-container {
+    margin-top: -4rem;
+}
+
+.MuiChartsLegend-root,
+.MuiChartsLegend-label,
+.MuiChartsAxis-root,
+.MuiChartsAxis-directionX,
+.MuiChartsAxis-bottom {
     display: none;
 }
 
-.css-iael1t-MuiChartsAxis-root.MuiChartsAxis-bottom {
+.MuiChartsAxis-bottom {
 
     & .MuiChartsAxis-tickLabel,
     & .MuiChartsAxis-label {
@@ -39,15 +47,15 @@
 
 }
 
-.css-1vuxth3-MuiBarElement-root {
+.MuiBarElement-root {
     fill: $graph-a !important;
 }
 
-.css-9foxff-MuiChartsAxis-line,
-.css-2jrcws-MuiChartsAxis-tick {
+.MuiChartsAxis-line,
+.MuiChartsAxis-tick {
     stroke: $graph-line !important;
 }
 
-.css-z411iq-MuiChartsAxis-tickLabel {
+.MuiChartsAxis-tickLabel {
     fill: $graph-label !important;
 }

@@ -68,6 +68,7 @@ const Contributions: React.FC = () => {
 
         <div className='c-contributions'>
 
+
             {/* <section className="component-header">
                 <h2 className="component-header__title">
                     GitHub Contributions
@@ -83,29 +84,8 @@ const Contributions: React.FC = () => {
             {weeklyContributions.length === 0 ? (
                 <p>Loading...</p>
             ) : (
-                // <>
-                //     <BarChart
-                //         xAxis={[{
-                //             id: 'barCategories',
-                //             data: yAxisData, // date
-                //             scaleType: 'band',
-                //         },
-                //         ]}
-                //         series={[{
-                //             data: xAxisData, // count
-                //         },
-                //         ]}
-                //         width={500} height={300}
-                //     />
-                // </>
 
                 <>
-
-
-
-
-
-
                     <BarChart
 
                         xAxis={[{
@@ -117,13 +97,12 @@ const Contributions: React.FC = () => {
 
                         series={
                             [
-                                { data: xAxisData, stack: 'A', label: 'GitHub Contributions' },
+                                { data: xAxisData, stack: 'A', label: 'Weekly GitHub Contributions' },
                                 // { data: [13, 22, 43, 24, 45, 65, 17, 38, 19, 8, 17, 10], stack: 'B', label: 'C' },
                             ]}
-                        width={600}
-                        height={350}
+                    // width={600}
+                    // height={350}
                     />
-
 
                 </>
             )}

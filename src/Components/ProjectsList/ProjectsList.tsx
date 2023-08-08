@@ -17,7 +17,7 @@ interface ProjectData {
 }
 
 const ProjectsList: React.FC = () => {
-	const [activeProjectIndex, setActiveProjectIndex] = useState<number>(0); // Change the initial state to 0
+	const [activeProjectIndex, setActiveProjectIndex] = useState<null>(null); // Change the initial state to 0
 	const activeProjectRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
@@ -26,10 +26,9 @@ const ProjectsList: React.FC = () => {
 
 	return (
 		<div id="c-projects" className="projects">
-			<Contributions />
 			<section className="component-header">
 				<h2 className="component-header__title">
-					Projects
+					{/* Projects */}
 				</h2>
 			</section>
 
@@ -67,6 +66,8 @@ const ProjectsList: React.FC = () => {
 					</div>
 				</div>
 			))}
+
+			<Contributions />
 		</div>
 	)
 

@@ -4,6 +4,7 @@ import projectData from "../../data/projects"
 import { Link } from "react-router-dom"
 import { useEffect, useRef, useState } from "react"
 import { toggleActiveClass, handleActiveProject } from "../../utils/animations" // Corrected import path
+import Contributions from "../Contributions/Contributions"
 
 interface ProjectData {
 	link: string
@@ -16,8 +17,8 @@ interface ProjectData {
 }
 
 const ProjectsList: React.FC = () => {
-	const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(null)
-	const activeProjectRef = useRef<HTMLDivElement>(null)
+	const [activeProjectIndex, setActiveProjectIndex] = useState<number>(0); // Change the initial state to 0
+	const activeProjectRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		handleActiveProject(activeProjectRef, activeProjectIndex)
@@ -25,6 +26,13 @@ const ProjectsList: React.FC = () => {
 
 	return (
 		<div id="c-projects" className="projects">
+			<Contributions />
+			<section className="component-header">
+				<h2 className="component-header__title">
+					Projects
+				</h2>
+			</section>
+
 			{projectData.map((project: ProjectData, index: number) => (
 				<div
 					ref={activeProjectIndex === index ? activeProjectRef : null}
@@ -61,6 +69,7 @@ const ProjectsList: React.FC = () => {
 			))}
 		</div>
 	)
+
 }
 
 export default ProjectsList

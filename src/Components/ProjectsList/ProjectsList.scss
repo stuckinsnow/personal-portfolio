@@ -5,6 +5,11 @@
 #c-projects {
     padding: 1rem;
     padding-top: 0;
+    box-sizing: border-box;
+
+    @include tablet {
+        width: 40%;
+    }
 }
 
 .projects-card {
@@ -45,7 +50,6 @@
 
     @include desktop {
 
-        width: 60%;
         flex-direction: row;
 
     }

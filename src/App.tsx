@@ -9,7 +9,7 @@ import ProjectsPage from './Pages/ProjectsPage/ProjectsPage';
 function App(): JSX.Element {
   return (
     <Router>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/calculator" element={<Calculator />} />

@@ -48,11 +48,7 @@ const Header: React.FC = () => {
       {/* Navbar */}
       <nav className={`navbar ${isHamburgerOpen ? 'active' : ''}`}>
         <ul className='navbar__list'>
-          <li className={`navbar__item navbar__item-1 navbar__item-1`}>
-            {/* <Link to="/contact" className="navbar__link navbar__link--request" onClick={handleNavLinkClick}>
-              Contact
-            </Link> */}
-          </li>
+
           <li className={`navbar__item navbar__item-2 ${delayedItems.includes(1) ? 'delay' : ''}`}>
             <NavLink to="/" className="navbar__link link-animate" onClick={handleNavLinkClick} >
               Home
@@ -62,11 +58,6 @@ const Header: React.FC = () => {
             <NavLink to="/projects" className="navbar__link link-animate" onClick={handleNavLinkClick} >
               Projects
             </NavLink>
-          </li>
-          <li className={`navbar__item ${delayedItems.includes(3) ? 'delay' : ''}`}>
-            {/* <NavLink to="/about" className="navbar__link link-animate" onClick={handleNavLinkClick} >
-              About
-            </NavLink> */}
           </li>
         </ul>
       </nav>

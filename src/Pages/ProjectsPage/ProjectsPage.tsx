@@ -9,7 +9,7 @@ const ProjectsPage: React.FC = () => {
 
     return (
         <>
-            <Contributions />
+            {/* <Contributions /> */}
             <ProjectsList />
         </>
     )

@@ -48,9 +48,8 @@
     border-radius: 0.5rem;
     box-sizing: border-box;
     border: thin solid $color-g;
-
     // background: $color-l;
-    box-shadow: $shadow-card;
+    box-shadow: $shadow-main;
     backdrop-filter: blur($px5);
     -webkit-backdrop-filter: blur($px5);
     z-index: 2;
@@ -80,15 +79,34 @@
 }
 
 .links {
+
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: auto;
+    margin-top: 4rem;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
     &__link {
+        color: $tech-writing;
+        text-align: center;
+        line-height: 4rem;
+        margin: 2rem;
         border: thin solid $color-g;
         border-radius: 0.5rem;
-        background-color: $color-l-low-op;
-        width: 10rem;
+        box-shadow: $shadow-main;
+        width: 6rem;
         height: 4rem;
-        position: absolute;
-        margin-top: -2rem;
-        top: auto;
-        z-index: -2;
+
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+        &:hover {
+            margin-top: 6rem;
+            z-index: 9;
+
+        }
     }
 }

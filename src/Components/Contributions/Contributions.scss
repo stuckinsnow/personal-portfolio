@@ -6,15 +6,22 @@
     // display: none;
     width: 100%;
     height: 20rem;
-    border: thin solid $color-g;
+    height: 15rem;
+    // border: thin solid $color-g;
     border-radius: 0.5rem;
     overflow: hidden;
+    z-index: 9;
 
     @include tablet {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+}
+
+.projects .c-contributions {
+    border: thin solid $color-g;
+    height: 20rem;
 }
 
 .date,

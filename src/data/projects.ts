@@ -13,7 +13,7 @@ const projectData = [
         date: "Jun 2023",
         name: "EA - Apex Digital Twin",
         type: "Hackathon",
-        technology: ["Sass", "JavaScript", "React"],
+        technology: ["SASS", "JavaScript", "React"],
         link: "https://github.com/stuckinsnow/ea-sports-digital-twin",
         image: "https://i.imgur.com/zXsuCXi.jpg",
         desc: "1st Place, Cross Disciplinery Hackathon Project for EA Sports. Train your digital twin!"

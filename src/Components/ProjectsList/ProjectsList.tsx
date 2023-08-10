@@ -4,7 +4,6 @@ import projectData from "../../data/projects"
 import { Link } from "react-router-dom"
 import { useEffect, useRef, useState } from "react"
 import { toggleActiveClass, handleActiveProject } from "../../utils/animations" // Corrected import path
-import Contributions from "../Contributions/Contributions"
 
 interface ProjectData {
 	link: string
@@ -59,15 +58,13 @@ const ProjectsList: React.FC = () => {
 					<p className="projects-card__description">{project.desc}</p>
 					<div className={`projects-card__item projects-card__tech ${activeProjectIndex === index ? "active" : ""}`}>
 						{project.technology.map((tech, index) => (
-							<span key={index} className={"projects-card__tech--list-item" + " " + "projects-card__tech--" + tech.toLowerCase().replace(/[.\s]+/g, "-")}>
+							<span key={index} className={"projects-card__tech--list-item" + " " + "tech-label tech-label--" + tech.toLowerCase().replace(/[.\s]+/g, "-")}>
 								{tech}
 							</span>
 						))}
 					</div>
 				</div>
 			))}
-
-			<Contributions />
 		</div>
 	)
 

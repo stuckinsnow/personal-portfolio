@@ -4,7 +4,7 @@ import { animateLetters, useToggleClass } from '../../utils/animations';
 
 import './Header.scss';
 
-const Header: React.FC = () => {
+const Header = () => {
   const [isHamburgerOpen, toggleHamburger, isHamburgerClicked, setIsHamburgerClicked] = useToggleClass(false);
   const [delayedItems, setDelayedItems] = useState<number[]>([]);
   const delayedItemsTimeoutsRef = useRef<NodeJS.Timeout[]>([]);

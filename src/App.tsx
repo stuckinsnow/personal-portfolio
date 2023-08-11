@@ -6,7 +6,7 @@ import Calculator from './Pages/Calculator/Calculator';
 import Footer from './Components/Footer/Footer';
 import ProjectsPage from './Pages/ProjectsPage/ProjectsPage';
 
-function App(): JSX.Element {
+function App() {
   return (
     <Router>
       {/* <Header /> */}

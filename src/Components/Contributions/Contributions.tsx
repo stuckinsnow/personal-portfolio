@@ -6,7 +6,7 @@ import { BarChart } from '@mui/x-charts';
 import './Contributions.scss';
 
 
-const Contributions: React.FC = () => {
+const Contributions = () => {
     const token = process.env.REACT_APP_API_KEY || '';
     const userName = process.env.REACT_APP_USERNAME || '';
 

@@ -1,7 +1,7 @@
 import Contributions from '../Contributions/Contributions';
 import './Footer.scss';
 
-const Footer: React.FC = () => {
+const Footer = () => {
 
     return (
         <div>

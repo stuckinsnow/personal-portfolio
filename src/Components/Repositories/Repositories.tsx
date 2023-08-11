@@ -34,7 +34,7 @@ const GET_REPOSITORIES = gql`
   }
 `;
 
-const RepositoriesWithoutApollo: React.FC = () => {
+const RepositoriesWithoutApollo = () => {
   const { loading, error, data } = useQuery(GET_REPOSITORIES);
 
   if (loading) return <div>Loading...</div>;
@@ -55,7 +55,7 @@ const RepositoriesWithoutApollo: React.FC = () => {
   );
 };
 
-const Repositories: React.FC = () => (
+const Repositories = () => (
   <ApolloProvider client={client}>
     <RepositoriesWithoutApollo />
   </ApolloProvider>

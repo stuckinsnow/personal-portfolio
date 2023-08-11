@@ -5,7 +5,7 @@ import Contributions from "../../Components/Contributions/Contributions";
 import "./ProjectsPage.scss";
 import Repositories from "../../Components/Repositories/Repositories";
 
-const ProjectsPage: React.FC = () => {
+const ProjectsPage = () => {
 	useDocumentTitle("Projects Page")
 
 	return (

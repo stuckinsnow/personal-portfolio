@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 
 import './Calculator.scss';
 
-const Calculator: React.FC = () => {
+const Calculator = () => {
 
 
     return (

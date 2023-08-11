@@ -18,7 +18,7 @@ interface ProjectData {
 	technology: string[]
 }
 
-const ProjectsList: React.FC = () => {
+const ProjectsList = () => {
 	const [activeProjectIndex, setActiveProjectIndex] = useState<null>(null); // Change the initial state to 0
 	const [activeTechnology, setActiveTechnology] = useState<null>(null);
 	const activeProjectRef = useRef<HTMLDivElement>(null);

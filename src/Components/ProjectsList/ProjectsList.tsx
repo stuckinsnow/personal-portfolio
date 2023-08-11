@@ -4,6 +4,9 @@ import projectData from "../../data/projects"
 import { Link } from "react-router-dom"
 import { useEffect, useRef, useState } from "react"
 import { toggleActiveClass, handleActiveProject } from "../../utils/animations" // Corrected import path
+import { getUniqueTechnologies } from "../../utils/functions";
+
+const uniqueTechnologyList: string[] = getUniqueTechnologies(projectData)
 
 interface ProjectData {
 	link: string
@@ -24,12 +27,15 @@ const ProjectsList: React.FC = () => {
 	}, [activeProjectIndex, activeProjectRef])
 
 	return (
-		<div id="c-projects" className="projects">
-			<section className="component-header">
+		<section id="c-projects" className="projects">
+			{/* <section className="component-header">
 				<h2 className="component-header__title">
-					{/* Projects */}
-				</h2>
-			</section>
+					Projects
+				</h2></section> */}
+
+			<h2 className="p-projectpage__title">
+				Projects
+			</h2>
 
 			{projectData.map((project: ProjectData, index: number) => (
 				<div
@@ -56,16 +62,31 @@ const ProjectsList: React.FC = () => {
 					</section>
 					<img className="projects-card__image" src={project.image || "missing"} alt={project.name} />
 					<p className="projects-card__description">{project.desc}</p>
-					<div className={`projects-card__item projects-card__tech ${activeProjectIndex === index ? "active" : ""}`}>
-						{project.technology.map((tech, index) => (
-							<span key={index} className={"projects-card__tech--list-item" + " " + "tech-label tech-label--" + tech.toLowerCase().replace(/[.\s]+/g, "-")}>
-								{tech}
-							</span>
-						))}
+					<div className={`technology-list ${activeProjectIndex === index ? "active" : ""}`}>
+						{project.technology
+							.sort((a, b) => a.localeCompare(b))
+							.map((tech, index) => (
+								<span key={index} className={"technology-list__item" + " " + "technology-list__item--" + tech.toLowerCase().replace(/[.\s]+/g, "-")}>
+									{tech}
+								</span>
+							))}
 					</div>
 				</div>
 			))}
-		</div>
+
+			<section className="p-projectpage__technologies">
+				<h2 className="p-projectpage__title">
+					Technologies Used
+				</h2>
+				{uniqueTechnologyList
+					.sort((a, b) => a.localeCompare(b))
+					.map((tech, index) => (
+						<span key={index} className={"technology-list__item technology-list__item--" + tech.toLowerCase().replace(/[.\s]+/g, "-")}>
+							{tech}
+						</span>
+					))}
+			</section>
+		</section>
 	)
 
 }

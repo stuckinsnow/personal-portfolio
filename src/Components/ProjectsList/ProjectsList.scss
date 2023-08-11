@@ -40,6 +40,13 @@
         flex-direction: row;
     }
 
+    &-2 {
+        max-height: 2.6rem;
+        padding: 0.2rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
     &:hover {
         opacity: 1;
     }

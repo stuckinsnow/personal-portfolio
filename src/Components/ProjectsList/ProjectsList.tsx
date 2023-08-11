@@ -80,7 +80,7 @@ const ProjectsList: React.FC = () => {
 			<section className="p-projectpage__technologies">
 
 				<h2 className="p-projectpage__title">
-					Technologies Used
+					All Projects
 				</h2>
 
 				<div

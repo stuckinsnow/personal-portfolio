@@ -3,6 +3,7 @@ import ProjectsList from "../../Components/ProjectsList/ProjectsList";
 import Contributions from "../../Components/Contributions/Contributions";
 
 import "./ProjectsPage.scss";
+import Repositories from "../../Components/Repositories/Repositories";
 
 const ProjectsPage: React.FC = () => {
 	useDocumentTitle("Projects Page")
@@ -11,8 +12,9 @@ const ProjectsPage: React.FC = () => {
 		<>
 			<div className="p-projectpage">
 				<div className="p-projectpage__about-me">
-					<Contributions />
+					{/* <Contributions /> */}
 
+					<Repositories />
 				</div>
 
 				<ProjectsList />

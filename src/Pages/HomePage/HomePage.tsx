@@ -15,13 +15,8 @@ const HomePage: React.FC = () => {
           <h2 className="info__subtitle">Full-Stack Web Developer</h2>
           <p className="info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate ratione nisi, libero earum ut ducimus inventore velit optio! Expedita.</p>
 
-          {/* <Contributions /> */}
+          <Contributions />
         </section>
-
-        {/* <div className="links">
-          <Link to="/projects" className="links__link">Projects</Link>
-          <Link to="/about" className="links__link">About</Link>
-        </div> */}
 
       </div>
 

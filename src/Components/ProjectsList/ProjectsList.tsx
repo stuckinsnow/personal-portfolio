@@ -20,11 +20,14 @@ interface ProjectData {
 
 const ProjectsList: React.FC = () => {
 	const [activeProjectIndex, setActiveProjectIndex] = useState<null>(null); // Change the initial state to 0
+	const [activeTechnology, setActiveTechnology] = useState<null>(null);
 	const activeProjectRef = useRef<HTMLDivElement>(null);
+	const activeTechnologyRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		handleActiveProject(activeProjectRef, activeProjectIndex)
-	}, [activeProjectIndex, activeProjectRef])
+		handleActiveProject(activeTechnologyRef, activeTechnology)
+	}, [activeProjectIndex, activeProjectRef, activeTechnology, activeTechnologyRef])
 
 	return (
 		<section id="c-projects" className="projects">
@@ -40,7 +43,7 @@ const ProjectsList: React.FC = () => {
 			{projectData.map((project: ProjectData, index: number) => (
 				<div
 					ref={activeProjectIndex === index ? activeProjectRef : null}
-					className={`projects-card ${activeProjectIndex === index ? "active expanded" : ""}`}
+					className={`projects-card ${activeProjectIndex === index ? "expanded" : ""}`}
 					style={{
 						maxHeight: activeProjectIndex === index ? activeProjectRef.current?.scrollHeight + "px" : "",
 					}}
@@ -75,16 +78,30 @@ const ProjectsList: React.FC = () => {
 			))}
 
 			<section className="p-projectpage__technologies">
+
 				<h2 className="p-projectpage__title">
 					Technologies Used
 				</h2>
-				{uniqueTechnologyList
-					.sort((a, b) => a.localeCompare(b))
-					.map((tech, index) => (
-						<span key={index} className={"technology-list__item technology-list__item--" + tech.toLowerCase().replace(/[.\s]+/g, "-")}>
-							{tech}
-						</span>
-					))}
+
+				<div
+					ref={activeTechnology === 1 ? activeTechnologyRef : null}
+					className={`projects-card projects-card-2 ${activeTechnology === 1 ? "expanded" : ""}`}
+					style={{
+						maxHeight: activeTechnology === 1 ? activeTechnologyRef.current?.scrollHeight + "px" : "",
+					}}
+					data-index={1}
+					key={1}
+					onClick={() => toggleActiveClass(1, setActiveTechnology)}
+				>
+					{uniqueTechnologyList
+						.sort((a, b) => a.localeCompare(b))
+						.map((tech, index) => (
+							<span key={index} className={"technology-list__item technology-list__item--" + tech.toLowerCase().replace(/[.\s]+/g, "-")}>
+								{tech}
+							</span>
+						))}
+
+				</div>
 			</section>
 		</section>
 	)

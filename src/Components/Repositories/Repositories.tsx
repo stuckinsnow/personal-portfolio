@@ -42,7 +42,7 @@ const RepositoriesWithoutApollo = () => {
 
   return (
     <div className='c-repositories writing-block'>
-      <h3>Recent Commits:</h3>
+      <h3 className='c-repositories__subtitle'>Recent GitHub Commits</h3>
       {data.viewer.repositories.nodes.map((repo: any) => (
         <ul key={repo.name} className='repo-list'>
           {/* {repo.description && <p>{repo.description}</p>} */}

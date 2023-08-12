@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 import { useEffect, useRef, useState } from "react"
 import { toggleActiveClass, handleActiveProject } from "../../utils/animations" // Corrected import path
 import { getUniqueTechnologies } from "../../utils/functions";
+import Repositories from "../Repositories/Repositories"
 
 const uniqueTechnologyList: string[] = getUniqueTechnologies(projectData)
 
@@ -30,20 +31,49 @@ const ProjectsList = () => {
 	}, [activeProjectIndex, activeProjectRef, activeTechnology, activeTechnologyRef])
 
 	return (
-		<section id="c-projects" className="projects">
+		<div id="c-projects" className="projects">
 			{/* <section className="component-header">
 				<h2 className="component-header__title">
 					Projects
 				</h2></section> */}
 
-			<h2 className="p-projectpage__title">
+			{/* <h2 className="p-projectpage__title">
 				Projects
-			</h2>
+			</h2> */}
+
+			<div className="p-projectpage__technologies">
+
+				{/* <h2 className="p-projectpage__title">
+	All Projects
+</h2> */}
+
+				<div
+					ref={activeTechnology === 1 ? activeTechnologyRef : null}
+					className={`pl-card pl-card-2 ${activeTechnology === 1 ? "expanded" : ""}`}
+					style={{
+						maxHeight: activeTechnology === 1 ? activeTechnologyRef.current?.scrollHeight + "px" : "",
+					}}
+					data-index={1}
+					key={1}
+					onClick={() => toggleActiveClass(1, setActiveTechnology)}
+				>
+
+					<span className="technology-list__item technology-list__item--all">Projects & Technologies</span>
+					{uniqueTechnologyList
+						.sort((a, b) => a.localeCompare(b))
+						.map((tech, index) => (
+							<span key={index} className={"technology-list__item technology-list__item--" + tech.toLowerCase().replace(/[.\s]+/g, "-")}>
+								{tech}
+							</span>
+						))}
+
+				</div>
+			</div>
 
 			{projectData.map((project: ProjectData, index: number) => (
 				<div
 					ref={activeProjectIndex === index ? activeProjectRef : null}
-					className={`projects-card ${activeProjectIndex === index ? "expanded" : ""}`}
+					className={`pl-card ${activeProjectIndex === index ? "expanded" : ""}`}
 					style={{
 						maxHeight: activeProjectIndex === index ? activeProjectRef.current?.scrollHeight + "px" : "",
 					}}
@@ -63,8 +93,8 @@ const ProjectsList = () => {
 							<span className="projects-title-bar__group--date">{project.date}</span>
 						</p>
 					</section>
-					<img className="projects-card__image" src={project.image || "missing"} alt={project.name} />
-					<p className="projects-card__description">{project.desc}</p>
+					<img className="pl-card__image" src={project.image || "missing"} alt={project.name} />
+					<p className="pl-card__description">{project.desc}</p>
 					<div className={`technology-list ${activeProjectIndex === index ? "active" : ""}`}>
 						{project.technology
 							.sort((a, b) => a.localeCompare(b))
@@ -77,33 +107,8 @@ const ProjectsList = () => {
 				</div>
 			))}
 
-			<section className="p-projectpage__technologies">
 
-				<h2 className="p-projectpage__title">
-					All Projects
-				</h2>
-
-				<div
-					ref={activeTechnology === 1 ? activeTechnologyRef : null}
-					className={`projects-card projects-card-2 ${activeTechnology === 1 ? "expanded" : ""}`}
-					style={{
-						maxHeight: activeTechnology === 1 ? activeTechnologyRef.current?.scrollHeight + "px" : "",
-					}}
-					data-index={1}
-					key={1}
-					onClick={() => toggleActiveClass(1, setActiveTechnology)}
-				>
-					{uniqueTechnologyList
-						.sort((a, b) => a.localeCompare(b))
-						.map((tech, index) => (
-							<span key={index} className={"technology-list__item technology-list__item--" + tech.toLowerCase().replace(/[.\s]+/g, "-")}>
-								{tech}
-							</span>
-						))}
-
-				</div>
-			</section>
-		</section>
+		</div>
 	)
 
 }

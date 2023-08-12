@@ -3,20 +3,18 @@
 @use '../../styles/mixins.scss' as *;
 
 #c-projects {
-    padding: 1rem;
     padding-top: 0;
     box-sizing: border-box;
 
     @include tablet {
-        padding: 0;
-        padding-top: 0.5rem;
+        padding-top: 1rem;
         padding-right: 1rem;
         width: 40%;
         max-width: 35rem;
     }
 }
 
-.projects-card {
+.pl-card {
 
     width: 90%;
     flex-direction: column;
@@ -30,6 +28,7 @@
     margin-bottom: 1rem;
     box-sizing: border-box;
     border: thin solid $color-g;
+    cursor: pointer;
     opacity: 0.8;
     overflow: hidden;
 
@@ -76,10 +75,6 @@
         flex-basis: 100%;
         display: flex;
         justify-content: space-between;
-
-        cursor: pointer;
-
-
         padding: 0 0.5rem;
         align-items: center;
 
@@ -189,7 +184,6 @@
         box-sizing: border-box;
         line-height: 0.75rem;
         font-weight: 500;
-        cursor: pointer;
         border-radius: 0.5rem;
         padding: 0.5rem;
         margin: 0.25rem 0.25rem;
@@ -203,6 +197,12 @@
             // flex-grow: unset;
             min-width: 15.25%;
             flex-basis: unset;
+        }
+
+        &--all {
+            font-size: 1.17rem;
+            font-weight: 700;
+            min-width: 2.5rem;
         }
 
         &--apollo {

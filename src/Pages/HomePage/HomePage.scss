@@ -11,19 +11,7 @@
     justify-content: center;
     gap: 1rem;
 
-    @include desktop {
-        // flex-direction: row;
-        // align-items: flex-start;
-    }
 }
-
-// .components {
-
-//     @include desktop {
-//         width: 40%;
-//         padding: 0;
-//     }
-// }
 
 #profile {
     width: 100%;
@@ -43,22 +31,23 @@
 
 .info {
     padding: 1rem;
-    // padding: 2rem;
-    width: 90%;
     border-radius: 0.5rem;
     box-sizing: border-box;
     border: thin solid $color-g;
-    // background: $color-l;
-    box-shadow: $shadow-main;
-    backdrop-filter: blur($px5);
-    -webkit-backdrop-filter: blur($px5);
-    z-index: 2;
-
-    // box-shadow: $shadow-main;
 
     @include desktop {
-        padding: 1rem;
-        // margin-bottom: 8rem;
+        width: 25rem;
+        box-shadow: $shadow-main;
+        backdrop-filter: blur($px5);
+        -webkit-backdrop-filter: blur($px5);
+    }
+
+    &__link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     &__title {
@@ -78,35 +67,34 @@
     }
 }
 
-.links {
+// .links {
 
-    width: 100%;
-    display: flex;
-    position: absolute;
-    top: auto;
-    margin-top: 4rem;
-    align-content: center;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+//     width: 100%;
+//     display: flex;
+//     position: absolute;
+//     top: auto;
+//     margin-top: 4rem;
+//     align-content: center;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: center;
 
-    &__link {
-        color: $tech-writing;
-        text-align: center;
-        line-height: 4rem;
-        margin: 2rem;
-        border: thin solid $color-g;
-        border-radius: 0.5rem;
-        box-shadow: $shadow-main;
-        width: 6rem;
-        height: 4rem;
+//     &__link {
+//         color: $tech-writing;
+//         text-align: center;
+//         line-height: 4rem;
+//         margin: 2rem;
+//         border: thin solid $color-g;
+//         border-radius: 0.5rem;
+//         box-shadow: $shadow-main;
+//         width: 6rem;
+//         height: 4rem;
 
-        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+//         transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
-        &:hover {
-            margin-top: 6rem;
-            z-index: 9;
+//         &:hover {
+//             margin-top: 6rem;
 
-        }
-    }
-}
+//         }
+//     }
+// }

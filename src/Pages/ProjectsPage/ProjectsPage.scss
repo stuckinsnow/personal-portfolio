@@ -1,22 +1,62 @@
 @use '../../styles/colours.scss' as *;
+@use '../../styles/mixins.scss' as *;
 
 .p-projectpage {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
-    &__about-me,
-    &__happy {
-        width: 40%;
-        max-width: 25rem;
+    @include desktop {
+        flex-direction: row;
+    }
+
+    &__group {
+
         height: 100%;
-        // flex-grow: 2;
+
+        @include desktop {
+            width: 40%;
+            max-width: 25rem;
+
+        }
+    }
+
+    .pp-card {
         margin: 1rem;
         padding: 1rem;
         color: $color-b;
         border: thin solid $color-g;
         border-radius: 0.5rem;
         text-align: justify;
+
+        &__home {
+            color: $color-c;
+            padding: 0.6rem;
+            line-height: 1.5rem;
+            font-size: 1.17rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        &__links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-direction: row;
+            font-weight: 700;
+
+        }
+
+        &__link,
+        &__link--home {
+            color: $color-a;
+            text-decoration: none;
+            transition: all 0.25s ease-in-out;
+
+            &:hover {
+                color: $color-l;
+            }
+        }
     }
 
     &__technologies {
@@ -26,10 +66,10 @@
     }
 
     &__title {
-        color: $color-c;
-        flex-basis: 100%;
-        text-align: center;
-        font-size: 1rem;
-        margin: 1rem;
+        font-size: 1.17rem;
+        margin: 1rem 0;
+        height: 1rem;
+
     }
+
 }

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import { useEffect, useRef, useState } from "react"
 import { toggleActiveClass, handleActiveProject } from "../../utils/animations" // Corrected import path
 import { getUniqueTechnologies } from "../../utils/functions";
-import Repositories from "../Repositories/Repositories"
+// import Repositories from "../Repositories/Repositories"
 
 const uniqueTechnologyList: string[] = getUniqueTechnologies(projectData)
 

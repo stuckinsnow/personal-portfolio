@@ -2,7 +2,7 @@ import './HomePage.scss';
 import { useDocumentTitle } from '../../utils/functions';
 import { Link } from 'react-router-dom';
 import Contributions from '../../Components/Contributions/Contributions';
-import ProjectsList from '../../Components/ProjectsList/ProjectsList';
+// import ProjectsList from '../../Components/ProjectsList/ProjectsList';
 
 const HomePage = () => {
   useDocumentTitle('Home Page');

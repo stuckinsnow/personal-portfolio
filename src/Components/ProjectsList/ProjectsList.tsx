@@ -99,7 +99,9 @@ const ProjectsList = () => {
 						{project.technology
 							.sort((a, b) => a.localeCompare(b))
 							.map((tech, index) => (
-								<span key={index} className={"technology-list__item" + " " + "technology-list__item--" + tech.toLowerCase().replace(/[.\s]+/g, "-")}>
+								<span
+									key={index}
+									className={`technology-list__item technology-list__item--${tech.toLowerCase().replace(/[.\s]+/g, "-")}`}>
 									{tech}
 								</span>
 							))}

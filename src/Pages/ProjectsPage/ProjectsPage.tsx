@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Contributions from "../../Components/Contributions/Contributions";
 
 const ProjectsPage = () => {
-	useDocumentTitle("Projects Page")
+	useDocumentTitle("Philip Lucas - Full Stack Web Developer")
 
 	const wittyTagline: string = '{ wittyComment }';
 

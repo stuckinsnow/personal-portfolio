@@ -41,7 +41,7 @@ const ProjectsList = () => {
 				Projects
 			</h2> */}
 
-			<div className="p-projectpage__technologies">
+			<div className="p-projectpage__technologies hidden-mobile">
 
 				{/* <h2 className="p-projectpage__title">
 	All Projects

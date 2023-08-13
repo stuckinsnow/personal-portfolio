@@ -3,10 +3,13 @@ import ProjectsList from "../../Components/ProjectsList/ProjectsList";
 
 import "./ProjectsPage.scss";
 import { Link } from "react-router-dom";
-import Repositories from "../../Components/Repositories/Repositories";
+// import Repositories from "../../Components/Repositories/Repositories";
+import Contributions from "../../Components/Contributions/Contributions";
 
 const ProjectsPage = () => {
 	useDocumentTitle("Projects Page")
+
+	const wittyTagline: string = '{ wittyComment }';
 
 	return (
 		<>
@@ -15,12 +18,23 @@ const ProjectsPage = () => {
 
 				<div className="p-projectpage__group">
 
-					<div className="pp-card">
+					<section className="pp-card">
+
+						<h1 className="info__title">Philip Lucas</h1>
+						<h2 className="info__subtitle">Full-Stack Web Developer</h2>
+						<p className="info__description">{wittyTagline}</p>
+
+					</section>
+
+
+
+
+					{/* <div className="pp-card">
 						<p className="pp-card__home"><Link to="/" className="pp-card__link--home">
 							Home
 						</Link>
 						</p>
-					</div>
+					</div> */}
 
 					<div className="pp-card pp-card__links">
 
@@ -50,9 +64,20 @@ const ProjectsPage = () => {
 
 					</div> */}
 
-					<div className="pp-card">
-						<Repositories />
+					<div className="pp-card hidden-mobile">
+						<Contributions />
 					</div>
+
+					{/* <div className="pp-card">
+						<p className="pp-card__description">Home
+						</p>
+					</div> */}
+
+					{/* <div className="pp-card">
+						<Repositories />
+					</div> */}
+
+
 
 				</div>
 

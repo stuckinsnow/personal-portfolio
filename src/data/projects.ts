@@ -2,13 +2,13 @@ const projectData = [
     {
         date: "July 2023",
         name: "Portfolio",
-        type: "Personal Project",
+        type: "Personal",
         technology: ["React", "TypeScript", "GraphQL", "Apollo", "Material UI", "Node.js", "AWS", "SASS"],
         link: "https://github.com/stuckinsnow/personal-portfolio",
         hostlink: "https://philiplucas.netlify.app",
         image: "https://i.imgur.com/zXsuCXi.jpg",
         // image: "",
-        desc: "A personal web developer portfolio."
+        desc: "A personal web developer portfolio. The design was inspired by https://brittanychiang.com/. Check out their website, it's great!"
     },
     {
         date: "Jun 2023",

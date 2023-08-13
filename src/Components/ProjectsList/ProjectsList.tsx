@@ -11,6 +11,7 @@ const uniqueTechnologyList: string[] = getUniqueTechnologies(projectData)
 
 interface ProjectData {
 	link: string
+	hostlink: string
 	name: string
 	type: string
 	date: string
@@ -84,9 +85,7 @@ const ProjectsList = () => {
 					<section className="projects-title-bar">
 						{" "}
 						<h3 className="projects-title-bar__head">
-							<Link className="projects-title-bar__link" to={project.link} target="/">
-								{project.name}
-							</Link>
+							{project.name}
 						</h3>
 						<p className="projects-title-bar__group">
 							<span className="projects-title-bar__group--type">{project.type}</span>
@@ -95,6 +94,13 @@ const ProjectsList = () => {
 					</section>
 					<img className="pl-card__image" src={project.image || "missing"} alt={project.name} />
 					<p className="pl-card__description">{project.desc}</p>
+
+					<div className="pl-card-links">
+						<p className="pl-card-links--left"><Link className="pl-card-links__link" to={project.link} target="/">GitHub</Link></p>
+						<p className="pl-card-links--right"><Link className="pl-card-links__link" to={project.hostlink} target="/">Link</Link></p>
+					</div>
+
+
 					<div className={`technology-list ${activeProjectIndex === index ? "active" : ""}`}>
 						{project.technology
 							.sort((a, b) => a.localeCompare(b))

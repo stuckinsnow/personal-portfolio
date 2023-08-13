@@ -14,7 +14,7 @@ const projectData = [
         date: "Jun 2023",
         name: "Capstone",
         type: "Personal - BrainStation Bootcamp",
-        technology: ["SASS", "JavaScript", "React", "Express.js", "Multer", "MySQL"],
+        technology: ["SASS", "JavaScript", "AWS", "React", "Express.js", "Multer", "MySQL"],
         link: "https://github.com/stuckinsnow/capstone-frontend",
         hostlink: "https://amzn1.lswr.net/pp",
         image: "https://i.imgur.com/zXsuCXi.jpg",

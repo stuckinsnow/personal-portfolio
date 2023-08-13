@@ -4,16 +4,16 @@ const projectData = [
         name: "Portfolio",
         type: "Personal Project",
         technology: ["React", "TypeScript", "GraphQL", "Apollo", "Material UI", "Node.js", "AWS", "SASS"],
-        link: "https://github.com/stuckinsnow",
+        link: "https://github.com/stuckinsnow/personal-portfolio",
         hostlink: "https://philiplucas.netlify.app",
         image: "https://i.imgur.com/zXsuCXi.jpg",
         // image: "",
-        desc: "A personal web developer portfolio"
+        desc: "A personal web developer portfolio."
     },
     {
         date: "Jun 2023",
         name: "Capstone",
-        type: "BrainStation",
+        type: "Personal - BrainStation Bootcamp",
         technology: ["SASS", "JavaScript", "React", "Express.js", "Multer", "MySQL"],
         link: "https://github.com/stuckinsnow/capstone-frontend",
         hostlink: "https://amzn1.lswr.net/pp",
@@ -23,12 +23,12 @@ const projectData = [
     {
         date: "Jun 2023",
         name: "EA - Apex Digital Twin",
-        type: "Hackathon",
+        type: "1st Place - Hackathon",
         technology: ["SASS", "JavaScript", "React"],
         link: "https://github.com/stuckinsnow/ea-sports-digital-twin",
         hostlink: "https://github.com/stuckinsnow/ea-sports-digital-twin",
         image: "https://i.imgur.com/zXsuCXi.jpg",
-        desc: "1st Place, Cross Disciplinery Hackathon Project for EA Sports. Train your digital twin!"
+        desc: "This was a cross-disciplinary, prize winning hackathon project for EA Sports. We were posed the question, \"how can we enhance interactivity between gamers?\" and our solution was to create a hypothetical digital twin that would act as a role model, both mechanically and from a communication standpoint."
     },
     {
         date: "Jun 2023",
@@ -50,7 +50,7 @@ const projectData = [
         hostlink: "https://github.com/pichsophaneatdy/Tasty-Eats/tree/main",
         image: "https://i.imgur.com/zXsuCXi.jpg",
         // image: "https://i.imgur.com/2KcpcFq.jpg",
-        desc: "I worked in collaboration with others to create a recipe generator and meal planner"
+        desc: "I worked in collaboration with others to create a recipe generator and meal planner."
     },
     {
         date: "May 2023",
@@ -61,7 +61,7 @@ const projectData = [
         hostlink: "https://github.com/stuckinsnow/brainstation-brainflix",
         image: "https://i.imgur.com/zXsuCXi.jpg",
         // image: "https://i.imgur.com/ORYIJYm.jpg",
-        desc: "Video streaming app"
+        desc: "Video streaming app."
     },
 ]
 

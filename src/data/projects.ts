@@ -3,7 +3,7 @@ const projectData = [
         date: "July 2023",
         name: "Portfolio",
         type: "Personal",
-        technology: ["React", "TypeScript", "GraphQL", "Apollo", "Material UI", "Node.js", "AWS", "SASS"],
+        technology: ["React", "TypeScript", "GraphQL", "Apollo", "Material UI", "Node.js", "Netlify", "SASS"],
         link: "https://github.com/stuckinsnow/personal-portfolio",
         hostlink: "https://philiplucas.netlify.app",
         image: "https://i.imgur.com/zXsuCXi.jpg",

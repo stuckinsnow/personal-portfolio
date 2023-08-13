@@ -12,7 +12,7 @@ const projectData = [
     },
     {
         date: "Jun 2023",
-        name: "Photography Portfolio",
+        name: "Capstone",
         type: "BrainStation",
         technology: ["SASS", "JavaScript", "React", "Express", "Multer", "mySQL"],
         link: "https://github.com/stuckinsnow/capstone-frontend",

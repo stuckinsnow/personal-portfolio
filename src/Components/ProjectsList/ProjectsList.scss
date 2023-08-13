@@ -126,6 +126,7 @@
         justify-content: flex-end;
         flex-grow: 2;
         padding: 0.5rem;
+        align-items: flex-end;
         gap: 1rem;
 
         &__link {
@@ -202,6 +203,7 @@
 
         font-size: 0.8rem;
         height: 0.75rem;
+        background-color: $color-k-low-op;
         box-sizing: border-box;
         line-height: 0.75rem;
         font-weight: 500;
@@ -223,6 +225,7 @@
         &--all {
             font-size: 1.17rem;
             font-weight: 700;
+            background-color: transparent;
             min-width: 2.5rem;
         }
 

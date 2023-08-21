@@ -1,4 +1,15 @@
 const projectData = [
+        {
+        date: "August 2023",
+        name: "Calculator",
+        type: "Personal",
+        technology: ["React", "TypeScript", "Netlify", "SASS"],
+        link: "https://github.com/stuckinsnow/calculator",
+        hostlink: "https://philip-calculator.netlify.app",
+        image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
+        // image: "",
+        desc: "I have seen a few calculators online and I wanted to build something logic intensive, without having to code a lot of html and css. This is a little different than usual, as it intentionally uses useState and TypeScript. I wanted to completely avoid using ChatGPT, and didn't expect the project to go so smoothly! This was a lot of fun."
+    },
     {
         date: "July 2023",
         name: "Portfolio",

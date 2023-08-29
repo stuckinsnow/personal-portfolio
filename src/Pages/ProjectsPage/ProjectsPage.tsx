@@ -9,7 +9,7 @@ import Contributions from "../../Components/Contributions/Contributions";
 const ProjectsPage = () => {
 	useDocumentTitle("Philip Lucas - Full Stack Web Developer")
 
-	const wittyTagline: string = '{ wittyComment }';
+	const tagLine: string = 'I break stuff and then try to fix it again.';
 
 	return (
 		<>
@@ -22,7 +22,7 @@ const ProjectsPage = () => {
 
 						<h1 className="info__title">Philip Lucas</h1>
 						<h2 className="info__subtitle">Full-Stack Web Developer</h2>
-						<p className="info__description">{wittyTagline}</p>
+						<p className="info__description">{tagLine}</p>
 
 					</section>
 
@@ -64,7 +64,7 @@ const ProjectsPage = () => {
 
 					</div> */}
 
-					<div className="pp-card hidden-mobile">
+					<div className="pp-card pp-card--contributions">
 						<Contributions />
 					</div>
 

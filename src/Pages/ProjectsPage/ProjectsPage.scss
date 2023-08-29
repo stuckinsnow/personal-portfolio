@@ -33,6 +33,11 @@
         border-radius: 0.5rem;
         text-align: justify;
 
+        &--contributions {
+            padding: 0;
+            margin: 1rem;
+        }
+
         &__home {
             color: $color-c;
             padding: 0.6rem;

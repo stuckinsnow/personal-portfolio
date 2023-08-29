@@ -30,7 +30,11 @@
 }
 
 .css-l0h214-MuiResponsiveChart-container {
-    margin-top: -4rem;
+    margin-top: 0;
+
+    @include tablet {
+        margin-top: -4rem;
+    }
 }
 
 .MuiChartsLegend-root,

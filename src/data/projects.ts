@@ -1,6 +1,6 @@
 const projectData = [
                 {
-        date: "September 2023",
+        date: "Sep 2023",
         name: "UpDaily",
         type: "Team",
         technology: ["React", "TypeScript", "SASS", "Google API", "GraphQL", "PostgreSQL", "Apollo Client", "AWS", "Firebase"],
@@ -8,10 +8,10 @@ const projectData = [
         hostlink: "https://www.youtube.com/watch?v=sBAITLKDf1Q",
         image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
         // image: "",
-        desc: "This project is a work in progress, please click the link to view a video of the registration process. My friend and I created this to showcase teamwork, and learn new skills. It uses Google API to show new businesses and events on a map people are already familiar with!"
+        desc: "This project is near completion. Please click the hostlink to see a video of the registration process. My friend and I created this to showcase teamwork and learn new skills. We planned, designed and built this app, working 9-5 every day, and couldn't be more proud! Think Google Maps meets Meetup!"
     },
         {
-        date: "August 2023",
+        date: "Aug 2023",
         name: "Calculator",
         type: "Personal",
         technology: ["React", "TypeScript", "Netlify", "SASS"],
@@ -22,7 +22,7 @@ const projectData = [
         desc: "I have seen a few calculators online and I wanted to build something logic intensive, without having to code a lot of html and css. This is a little different than usual, as it intentionally uses useState and TypeScript. I wanted to completely avoid using ChatGPT, and didn't expect the project to go so smoothly! This was a lot of fun."
     },
     {
-        date: "July 2023",
+        date: "Jul 2023",
         name: "Portfolio",
         type: "Personal",
         technology: ["React", "TypeScript", "GraphQL", "Apollo", "Material UI", "Node.js", "Netlify", "SASS"],

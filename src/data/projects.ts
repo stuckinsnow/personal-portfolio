@@ -1,4 +1,15 @@
 const projectData = [
+                {
+        date: "September 2023",
+        name: "UpDaily",
+        type: "Team",
+        technology: ["React", "TypeScript", "SASS", "Google API", "GraphQL", "PostgreSQL", "Apollo Client", "AWS", "Firebase"],
+        link: "https://github.com/stuckinsnow/",
+        hostlink: "https://www.youtube.com/watch?v=sBAITLKDf1Q",
+        image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
+        // image: "",
+        desc: "This project is a work in progress, please click the link to view a video of the registration process. My friend and I created this to showcase teamwork, and learn new skills. It uses Google API to show new businesses and events on a map people are already familiar with!"
+    },
         {
         date: "August 2023",
         name: "Calculator",

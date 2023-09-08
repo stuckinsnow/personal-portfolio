@@ -60,7 +60,7 @@
 
     &:hover {
         box-shadow: 0 $px5 $px30 rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur($px5);
+        // backdrop-filter: blur($px5);
     }
 
     @include desktop {

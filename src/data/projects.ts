@@ -1,5 +1,5 @@
 const projectData = [
-                {
+    {
         date: "Sep 2023",
         name: "UpDaily",
         type: "Team",
@@ -8,9 +8,9 @@ const projectData = [
         hostlink: "https://www.youtube.com/watch?v=sBAITLKDf1Q",
         image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
         // image: "",
-        desc: "This project is near completion. Please click the hostlink to see a video of the registration process. My friend and I created this to showcase teamwork and learn new skills. We planned, designed and built this app, working 9-5 every day, and couldn't be more proud! Think Google Maps meets Meetup!"
+        desc: "This project is near completion. Please click the hostlink to see a video of the registration process. My friend and I created this to showcase teamwork and learn new skills. We planned, designed and built this app, working 9-5 every day, and couldn't be more proud! Think Google Maps meets Meetup!",
     },
-        {
+    {
         date: "Aug 2023",
         name: "Calculator",
         type: "Personal",
@@ -19,7 +19,7 @@ const projectData = [
         hostlink: "https://philip-calculator.netlify.app",
         image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
         // image: "",
-        desc: "I have seen a few calculators online and I wanted to build something logic intensive, without having to code a lot of html and css. This is a little different than usual, as it intentionally uses useState and TypeScript. I wanted to completely avoid using ChatGPT, and didn't expect the project to go so smoothly! This was a lot of fun."
+        desc: "I have seen a few calculators online and I wanted to build something logic intensive, without having to code a lot of html and css. This is a little different than usual, as it intentionally uses useState and TypeScript. I wanted to completely avoid using ChatGPT, and didn't expect the project to go so smoothly! This was a lot of fun.",
     },
     {
         date: "Jul 2023",
@@ -30,7 +30,7 @@ const projectData = [
         hostlink: "https://philiplucas.netlify.app",
         image: "https://i.imgur.com/zXsuCXi.jpg",
         // image: "",
-        desc: "A personal web developer portfolio. The design was inspired by https://brittanychiang.com/. Check out their website, it's great!"
+        desc: "A personal web developer portfolio. The design was inspired by https://brittanychiang.com/. Check out their website, it's great!",
     },
     {
         date: "Jun 2023",
@@ -40,7 +40,7 @@ const projectData = [
         link: "https://github.com/stuckinsnow/capstone-frontend",
         hostlink: "https://amzn1.lswr.net/pp",
         image: "https://i.imgur.com/zXsuCXi.jpg",
-        desc: "Full stack capstone project. I made this to showcase photographs, but also the EXIF data obtained from the photograph itself, when it is uploaded and saved to the back end. The idea behind this was because I've received a few messages asking what settings were used for my photographs!"
+        desc: "Full stack capstone project. I made this to showcase photographs, but also the EXIF data obtained from the photograph itself, when it is uploaded and saved to the back end. The idea behind this was because I've received a few messages asking what settings were used for my photographs!",
     },
     {
         date: "Jun 2023",
@@ -50,7 +50,7 @@ const projectData = [
         link: "https://github.com/stuckinsnow/ea-sports-digital-twin",
         hostlink: "https://github.com/stuckinsnow/ea-sports-digital-twin",
         image: "https://i.imgur.com/zXsuCXi.jpg",
-        desc: "This was a cross-disciplinary, prize winning hackathon project for EA Sports. We were posed the question, \"how can we enhance interactivity between gamers?\" and our solution was to create a hypothetical digital twin that would act as a role model, both mechanically and from a communication standpoint."
+        desc: 'This was a cross-disciplinary, prize winning hackathon project for EA Sports. We were posed the question, "how can we enhance interactivity between gamers?" and our solution was to create a hypothetical digital twin that would act as a role model, both mechanically and from a communication standpoint.',
     },
     {
         date: "Jun 2023",
@@ -61,7 +61,7 @@ const projectData = [
         hostlink: "https://github.com/InStock-Group4/intock-client",
         // image: "https://i.imgur.com/7B7HSP6.jpg",
         image: "https://i.imgur.com/zXsuCXi.jpg",
-        desc: "I worked with others to create an inventory management system."
+        desc: "I worked with others to create an inventory management system.",
     },
     {
         date: "May 2023",
@@ -72,7 +72,7 @@ const projectData = [
         hostlink: "https://github.com/pichsophaneatdy/Tasty-Eats/tree/main",
         image: "https://i.imgur.com/zXsuCXi.jpg",
         // image: "https://i.imgur.com/2KcpcFq.jpg",
-        desc: "I worked in collaboration with others to create a recipe generator and meal planner."
+        desc: "I worked in collaboration with others to create a recipe generator and meal planner.",
     },
     {
         date: "May 2023",
@@ -83,8 +83,8 @@ const projectData = [
         hostlink: "https://github.com/stuckinsnow/brainstation-brainflix",
         image: "https://i.imgur.com/zXsuCXi.jpg",
         // image: "https://i.imgur.com/ORYIJYm.jpg",
-        desc: "Video streaming app."
+        desc: "Video streaming app.",
     },
 ]
 
-export default projectData;
+export default projectData

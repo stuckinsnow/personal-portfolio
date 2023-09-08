@@ -68,6 +68,29 @@
         }
     }
 
+    .about-philip {
+        width: 25%;
+        margin-left: 0;
+        color: $color-a;
+        font-size: small;
+        height: 100%;
+
+        display: none;
+
+        &__title {
+            margin-top: 0;
+        }
+
+        &__paragraph {
+            margin-top: 1rem;
+        }
+
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     &__technologies {
         width: 100%;
         display: flex;

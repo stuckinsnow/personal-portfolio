@@ -9,7 +9,7 @@ import Contributions from "../../Components/Contributions/Contributions";
 const ProjectsPage = () => {
 	useDocumentTitle("Philip Lucas - Full Stack Web Developer")
 
-	const tagLine: string = 'Please connect with me on linkedin';
+	const tagLine: string = 'Please contact me on linkedin below!';
 
 	return (
 		<>

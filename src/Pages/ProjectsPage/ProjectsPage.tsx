@@ -4,7 +4,7 @@ import ProjectsList from "../../Components/ProjectsList/ProjectsList";
 import "./ProjectsPage.scss";
 import { Link } from "react-router-dom";
 // import Repositories from "../../Components/Repositories/Repositories";
-import Contributions from "../../Components/Contributions/Contributions";
+// import Contributions from "../../Components/Contributions/Contributions";
 
 const ProjectsPage = () => {
 	useDocumentTitle("Philip Lucas - Full Stack Web Developer")
@@ -40,9 +40,9 @@ const ProjectsPage = () => {
 
 					</div>
 
-					<div className="pp-card pp-card--contributions">
+					{/* <div className="pp-card pp-card--contributions">
 						<Contributions />
-					</div>
+					</div> */}
 
 				</div>
 

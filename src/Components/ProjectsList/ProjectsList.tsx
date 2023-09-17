@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react"
 import { toggleActiveClass, handleActiveProject } from "../../utils/animations" // Corrected import path
 import { getUniqueTechnologies } from "../../utils/functions";
 // import Repositories from "../Repositories/Repositories"
-
+import Contributions from "../Contributions/Contributions";
 const uniqueTechnologyList: string[] = getUniqueTechnologies(projectData)
 
 interface ProjectData {
@@ -33,6 +33,13 @@ const ProjectsList = () => {
 
 	return (
 		<div id="c-projects" className="projects">
+
+
+			<Contributions />
+
+
+
+
 			{/* <section className="component-header">
 				<h2 className="component-header__title">
 					Projects

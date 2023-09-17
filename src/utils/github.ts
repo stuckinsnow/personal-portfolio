@@ -24,22 +24,23 @@ export interface ContributionData {
 
 export const fetchContributions = async (token: string, userName: string) => {
   const query = `
-    query($userName: String!) {
-      user(login: $userName) {
-        contributionsCollection {
-          contributionCalendar {
-            totalContributions
-            weeks {
-              contributionDays {
-                contributionCount
-                date
-              }
+  query($userName: String!) {
+    user(login: $userName) {
+      contributionsCollection {
+        contributionCalendar {
+          totalContributions
+          weeks {
+            contributionDays {
+              date
+              contributionCount
             }
           }
         }
       }
     }
-  `;
+  }
+`;
+
 
   try {
     const response = await graphql(query, {

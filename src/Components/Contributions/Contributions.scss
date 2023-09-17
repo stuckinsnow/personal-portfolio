@@ -20,7 +20,10 @@
 
 .projects .c-contributions {
     border: thin solid $color-g;
-    height: 15rem;
+    box-sizing: border-box;
+    height: auto;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 .date,
@@ -36,36 +39,121 @@
     }
 }
 
-.MuiChartsLegend-root,
-.MuiChartsLegend-label,
-.MuiChartsAxis-root,
-.MuiChartsAxis-directionX,
-.MuiChartsAxis-bottom {
-    display: none;
+// .MuiChartsLegend-root,
+// .MuiChartsLegend-label,
+// .MuiChartsAxis-root,
+// .MuiChartsAxis-directionX,
+// .MuiChartsAxis-bottom {
+//     display: none;
+// }
+
+// .MuiChartsAxis-bottom {
+
+//     & .MuiChartsAxis-tickLabel,
+//     & .MuiChartsAxis-label {
+
+//         alignment-baseline: mathematical !important;
+//         text-anchor: revert !important;
+//         text-overflow: ellipsis;
+//         transform: rotate(90deg);
+//     }
+
+// }
+
+// .MuiBarElement-root {
+//     fill: $graph-a !important;
+// }
+
+// .MuiChartsAxis-line,
+// .MuiChartsAxis-tick {
+//     stroke: $graph-line !important;
+// }
+
+// .MuiChartsAxis-tickLabel {
+//     fill: $graph-label !important;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .color-scale-4 {
+//     fill: red;
+//     color: red;
+//     background: red;
+// }
+
+
+/*
+ * react-calendar-heatmap styles
+ *
+ * All of the styles in this file are optional and configurable!
+ * The github and gitlab color scales are provided for reference.
+ */
+
+.react-calendar-heatmap text {
+    font-size: 10px;
+    fill: #aaa;
 }
 
-.MuiChartsAxis-bottom {
-
-    & .MuiChartsAxis-tickLabel,
-    & .MuiChartsAxis-label {
-
-        alignment-baseline: mathematical !important;
-        text-anchor: revert !important;
-        text-overflow: ellipsis;
-        transform: rotate(90deg);
-    }
-
+.react-calendar-heatmap .react-calendar-heatmap-small-text {
+    font-size: 5px;
 }
 
-.MuiBarElement-root {
-    fill: $graph-a !important;
+.react-calendar-heatmap rect:hover {
+    stroke: #555;
+    stroke-width: 1px;
 }
 
-.MuiChartsAxis-line,
-.MuiChartsAxis-tick {
-    stroke: $graph-line !important;
+/*
+   * Default color scale
+   */
+
+.react-calendar-heatmap .color-empty {
+    fill: #eeeeee;
 }
 
-.MuiChartsAxis-tickLabel {
-    fill: $graph-label !important;
+.react-calendar-heatmap .color-filled {
+    fill: #8cc665;
+}
+
+/*
+   * Github color scale
+   */
+
+.react-calendar-heatmap .color-github-0 {
+    fill: #eeeeee;
+}
+
+.react-calendar-heatmap .color-github-1 {
+    fill: #d6e685;
+}
+
+.react-calendar-heatmap .color-github-2 {
+    fill: #8cc665;
+}
+
+.react-calendar-heatmap .color-github-3 {
+    fill: #44a340;
+}
+
+.react-calendar-heatmap .color-github-4 {
+    fill: #1e6823;
+}
+
+.react-calendar-heatmap .color-github-5 {
+    fill: #19581e;
+}
+
+.react-calendar-heatmap .color-github-6 {
+    fill: #113b14;
 }

@@ -1,5 +1,5 @@
 const projectData = [
-    {
+        {
         date: "Sep 2023",
         name: "UpDaily",
         type: "Team",
@@ -20,6 +20,17 @@ const projectData = [
         image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
         // image: "",
         desc: "I have seen a few calculators online and I wanted to build something logic intensive, without having to code a lot of html and css. This is a little different than usual, as it intentionally uses useState and TypeScript. I wanted to completely avoid using ChatGPT, and didn't expect the project to go so smoothly! This was a lot of fun.",
+    },
+        {
+        date: "Aug 2023",
+        name: "VanVisual",
+        type: "Team",
+        technology: ["React", "SASS", "Netlify", "Firebase"],
+        link: "https://github.com/updaily-ca/updaily-frontend",
+        hostlink: "https://vanvisual.com",
+        image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
+        // image: "",
+        desc: "This was a quick project made with four friends; two UX designers and another developer!",
     },
     {
         date: "Jul 2023",

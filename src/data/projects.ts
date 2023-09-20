@@ -4,7 +4,7 @@ const projectData = [
         name: "UpDaily",
         type: "Team",
         technology: ["React", "TypeScript", "SASS", "Google API", "GraphQL", "PostgreSQL", "Apollo Client", "AWS", "Firebase"],
-        link: "https://github.com/stuckinsnow/",
+        link: "https://github.com/updaily-ca/updaily-frontend/",
         hostlink: "https://www.youtube.com/watch?v=sBAITLKDf1Q",
         image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
         // image: "",

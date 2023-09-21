@@ -5,10 +5,10 @@ const projectData = [
         type: "Team",
         technology: ["React", "TypeScript", "SASS", "Google API", "GraphQL", "PostgreSQL", "Apollo Client", "AWS", "Firebase"],
         link: "https://github.com/updaily-ca/updaily-frontend/",
-        hostlink: "https://www.youtube.com/watch?v=sBAITLKDf1Q",
+        hostlink: "https://www.youtube.com/watch?v=YjZp7ax6p8E",
         image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
         // image: "",
-        desc: "This project is near completion. Please click the hostlink to see a video of the registration process. My friend and I created this to showcase teamwork and learn new skills. We planned, designed and built this app, working 9-5 every day, and couldn't be more proud! Think Google Maps meets Meetup!",
+        desc: "Think Google Maps meets Meetup! My friend and I created this to showcase teamwork and learn new skills. We planned, designed and built this app, working 9-5 every day, and couldn't be more proud!",
     },
     {
         date: "Aug 2023",

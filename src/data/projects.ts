@@ -96,6 +96,17 @@ const projectData = [
         // image: "https://i.imgur.com/ORYIJYm.jpg",
         desc: "Video streaming app.",
     },
+    {
+        date: "May 2019",
+        name: "PhotoFolio",
+        type: "Personal - WordPress Theme",
+        technology: ["WordPress", "jQuery", "PHP", "AWS"],
+        link: "https://youtu.be/rK33ZWAn8FM",
+        hostlink: "https://youtu.be/rK33ZWAn8FM",
+        image: "https://i.imgur.com/zXsuCXi.jpg",
+        // image: "https://i.imgur.com/ORYIJYm.jpg",
+        desc: "I built this WordPress theme using PHP and jQuery, to animate photographs using an Isotope library. The menu was built to mimic a 3D effect, and was my first forray into complicated CSS animations! In the admin section, users can add photographs to the front page separately to the gallery page.",
+    },
 ]
 
 export default projectData

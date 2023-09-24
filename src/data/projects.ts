@@ -49,7 +49,7 @@ const projectData = [
         type: "Personal - BrainStation Bootcamp",
         technology: ["SASS", "JavaScript", "AWS", "React", "Express.js", "Multer", "MySQL"],
         link: "https://github.com/stuckinsnow/capstone-frontend",
-        hostlink: "https://amzn1.lswr.net/pp",
+        hostlink: "https://lswr.net/pp/",
         image: "https://i.imgur.com/zXsuCXi.jpg",
         desc: "Full stack capstone project. I made this to showcase photographs, but also the EXIF data obtained from the photograph itself, when it is uploaded and saved to the back end. The idea behind this was because I've received a few messages asking what settings were used for my photographs!",
     },

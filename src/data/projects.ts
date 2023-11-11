@@ -8,7 +8,7 @@ const projectData = [
         hostlink: "https://updaily.netlify.app/",
         image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
         // image: "",
-        desc: "Think Google Maps meets Meetup! My friend and I created this to showcase teamwork and learn new skills. We planned, designed and built this app, working 9-5 every day, and couldn't be more proud!",
+        desc: "Think Google Maps meets Meetup! My friend and I created this, and learned a lot in the process. We planned, designed and built this app as if it were a job, working 9-5 every day! Click the GitHub link to view the figma file.",
     },
     {
         date: "Aug 2023",
@@ -19,7 +19,7 @@ const projectData = [
         hostlink: "https://philip-calculator.netlify.app",
         image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
         // image: "",
-        desc: "I have seen a few calculators online and I wanted to build something logic intensive, without having to code a lot of html and css. This is a little different than usual, as it intentionally uses useState and TypeScript. I wanted to completely avoid using ChatGPT, and didn't expect the project to go so smoothly! This was a lot of fun.",
+        desc: "Prior to studying at BrainStation, I had a lot of experience with HTML and CSS. With this app, I decided to focus on something logic intensive, while also tasking myself with completing avoiding ChatGPT for assistance.",
     },
     {
         date: "Aug 2023",
@@ -30,7 +30,7 @@ const projectData = [
         hostlink: "https://vanvisual.com",
         image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
         // image: "",
-        desc: "This was a quick project made with four friends; two UX designers and another developer!",
+        desc: "This was a project made with four friends--two UX designers and another developer!",
     },
     {
         date: "Jul 2023",
@@ -41,7 +41,7 @@ const projectData = [
         hostlink: "https://philiplucas.netlify.app",
         image: "https://i.imgur.com/zXsuCXi.jpg",
         // image: "",
-        desc: "A personal web developer portfolio. The design was inspired by https://brittanychiang.com/. Check out their website, it's great!",
+        desc: "A personal web developer portfolio. I plan to make a new one as I'm not fond of the design, but this was a nice way to learn GraphQL!",
     },
     {
         date: "Jun 2023",
@@ -51,7 +51,7 @@ const projectData = [
         link: "https://github.com/stuckinsnow/capstone-frontend",
         hostlink: "https://lswr.net/pp/",
         image: "https://i.imgur.com/zXsuCXi.jpg",
-        desc: "Full stack capstone project. I made this to showcase photographs, but also the EXIF data obtained from the photograph itself, when it is uploaded and saved to the back end. The idea behind this was because I've received a few messages asking what settings were used for my photographs!",
+        desc: "A full stack capstone project. I made this to showcase photographs and grab data from files. The EXIF data is obtained from the photograph itself upon upload, it is then saved to the back end. I was inspired by the many messages asking me what settings were used for my photographs!",
     },
     {
         date: "Jun 2023",

@@ -46,7 +46,7 @@ const ProjectsPage = () => {
 
 				</div>
 
-				<div className="pp-card about-philip">
+				{/* <div className="pp-card about-philip">
 
 					<section className="">
 						<h2 className="about-philip__title" >Hello and welcome to my website!</h2>
@@ -69,7 +69,7 @@ const ProjectsPage = () => {
 					</p>
 
 
-				</div>
+				</div> */}
 				<ProjectsList />
 			</div>
 		</>

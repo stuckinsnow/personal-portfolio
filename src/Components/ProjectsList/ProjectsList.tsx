@@ -36,7 +36,7 @@ const ProjectsList = () => {
 	}, [activeProjectIndex, activeProjectRef, activeTechnology, activeTechnologyRef])
 
 
-	const { x, y } = useMousePosition(); // Use the hook
+	const { y } = useMousePosition(); // Use the hook
 
 	// console.log('x', x + ' y ' + y);
 

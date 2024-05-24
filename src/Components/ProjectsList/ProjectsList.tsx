@@ -25,20 +25,17 @@ interface ProjectData {
 
 
 const ProjectsList = () => {
-	const [activeProjectIndex, setActiveProjectIndex] = useState<null>(null); // Change the initial state to 0
-	const [activeTechnology, setActiveTechnology] = useState<null>(null);
+	const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(null);
+	const [activeTechnology, setActiveTechnology] = useState<number | null>(null);
 	const activeProjectRef = useRef<HTMLDivElement>(null);
 	const activeTechnologyRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		handleActiveProject(activeProjectRef, activeProjectIndex)
-		handleActiveProject(activeTechnologyRef, activeTechnology)
-	}, [activeProjectIndex, activeProjectRef, activeTechnology, activeTechnologyRef])
+		handleActiveProject(activeProjectRef, activeProjectIndex);
+		handleActiveProject(activeTechnologyRef, activeTechnology);
+	}, [activeProjectIndex, activeProjectRef, activeTechnology, activeTechnologyRef]);
 
-
-	const { y } = useMousePosition(); // Use the hook
-
-	// console.log('x', x + ' y ' + y);
+	const { y } = useMousePosition();
 
 	return (
 		<div id="c-projects" className="c-projects">
@@ -89,9 +86,6 @@ const ProjectsList = () => {
 						<img className="pl-card__image" src={project.image || "missing"} alt={project.name}
 							style={{
 								objectPosition: 0 + 'px' + ' ' + y + 'px',
-								// objectPosition:
-								// '220px' + '220px'
-								// `${0}px ${y}px`
 							}} />
 					) : null}
 

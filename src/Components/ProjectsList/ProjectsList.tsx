@@ -89,7 +89,9 @@ const ProjectsList = () => {
 					<p className="pl-card__description">{project.desc}</p>
 
 					<div className="pl-card-links">
-						<p className="pl-card-links--left hidden-mobile"><Link className="pl-card-links__link" to={project.link} target="blank">GitHub</Link></p>
+						{project.link.startsWith("https://") ? (
+							<p className="pl-card-links--left hidden-mobile"><Link className="pl-card-links__link" to={project.link} target="blank">GitHub</Link></p>
+						) : null}
 						<p className="pl-card-links--right"><Link className="pl-card-links__link" to={project.hostlink} target="blank">HostLink</Link></p>
 					</div>
 

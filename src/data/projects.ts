@@ -4,7 +4,7 @@ const projectData = [
         name: "DevPad Blog",
         type: "Personal",
         technology: ["NextJS", "TypeScript", "Tailwind CSS", "CMS", "Shiki", "Lexical", "GraphQL", "PostgreSQL", "Hetzner VPS"],
-        link: "/",
+        link: "",
         hostlink: "https://devpad.net/",
         image: "https://i.imgur.com/J22wcqd.png",
         // image: "",

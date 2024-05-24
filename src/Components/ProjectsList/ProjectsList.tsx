@@ -7,7 +7,10 @@ import { toggleActiveClass, handleActiveProject } from "../../utils/animations" 
 import { getUniqueTechnologies } from "../../utils/functions";
 // import Repositories from "../Repositories/Repositories"
 import Contributions from "../Contributions/Contributions";
+import useMousePosition from "../MousePosition/MousePosition"
+
 const uniqueTechnologyList: string[] = getUniqueTechnologies(projectData)
+
 
 interface ProjectData {
 	link: string
@@ -20,6 +23,7 @@ interface ProjectData {
 	technology: string[]
 }
 
+
 const ProjectsList = () => {
 	const [activeProjectIndex, setActiveProjectIndex] = useState<null>(null); // Change the initial state to 0
 	const [activeTechnology, setActiveTechnology] = useState<null>(null);
@@ -30,6 +34,11 @@ const ProjectsList = () => {
 		handleActiveProject(activeProjectRef, activeProjectIndex)
 		handleActiveProject(activeTechnologyRef, activeTechnology)
 	}, [activeProjectIndex, activeProjectRef, activeTechnology, activeTechnologyRef])
+
+
+	const { x, y } = useMousePosition(); // Use the hook
+
+	// console.log('x', x + ' y ' + y);
 
 	return (
 		<div id="c-projects" className="c-projects">
@@ -75,6 +84,18 @@ const ProjectsList = () => {
 					key={index}
 					onClick={() => toggleActiveClass(index, setActiveProjectIndex)}
 				>
+
+					{project.image.endsWith("jpg") || project.image.endsWith("png") ? (
+						<img className="pl-card__image" src={project.image || "missing"} alt={project.name}
+							style={{
+								objectPosition: 0 + 'px' + ' ' + y + 'px',
+								// objectPosition:
+								// '220px' + '220px'
+								// `${0}px ${y}px`
+							}} />
+					) : null}
+
+
 					<section className="projects-title-bar">
 						{" "}
 						<h3 className="projects-title-bar__head">
@@ -107,12 +128,6 @@ const ProjectsList = () => {
 								</span>
 							))}
 					</div>
-
-					{project.image.endsWith("jpg") || project.image.endsWith("png") ? (
-						<figure className="pl-card__image-container">
-							<img className="pl-card__image-container--image" src={project.image || "missing"} alt={project.name} />
-						</figure>
-					) : null}
 
 				</div>
 			))}

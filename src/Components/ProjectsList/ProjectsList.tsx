@@ -32,28 +32,13 @@ const ProjectsList = () => {
 	}, [activeProjectIndex, activeProjectRef, activeTechnology, activeTechnologyRef])
 
 	return (
-		<div id="c-projects" className="projects">
+		<div id="c-projects" className="c-projects">
 
 
 			<Contributions />
 
 
-
-
-			{/* <section className="component-header">
-				<h2 className="component-header__title">
-					Projects
-				</h2></section> */}
-
-			{/* <h2 className="p-projectpage__title">
-				Projects
-			</h2> */}
-
-			<div className="p-projectpage__technologies hidden-mobile">
-
-				{/* <h2 className="p-projectpage__title">
-	All Projects
-</h2> */}
+			<div className="c-projects__technologies hidden-mobile">
 
 				<div
 					ref={activeTechnology === 1 ? activeTechnologyRef : null}
@@ -79,6 +64,7 @@ const ProjectsList = () => {
 			</div>
 
 			{projectData.map((project: ProjectData, index: number) => (
+
 				<div
 					ref={activeProjectIndex === index ? activeProjectRef : null}
 					className={`pl-card ${activeProjectIndex === index ? "expanded" : ""}`}
@@ -99,7 +85,7 @@ const ProjectsList = () => {
 							<span className="projects-title-bar__group--date">{project.date}</span>
 						</p>
 					</section>
-					<img className="pl-card__image" src={project.image || "missing"} alt={project.name} />
+
 					<p className="pl-card__description">{project.desc}</p>
 
 					<div className="pl-card-links">
@@ -119,6 +105,13 @@ const ProjectsList = () => {
 								</span>
 							))}
 					</div>
+
+					{project.image.endsWith("jpg") || project.image.endsWith("png") ? (
+						<figure className="pl-card__image-container">
+							<img className="pl-card__image-container--image" src={project.image || "missing"} alt={project.name} />
+						</figure>
+					) : null}
+
 				</div>
 			))}
 

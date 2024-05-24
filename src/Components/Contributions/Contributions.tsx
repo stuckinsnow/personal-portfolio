@@ -14,15 +14,15 @@ const Contributions = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            console.log('Fetching data...');
+            // console.log('Fetching data...');
             if (userName) {
                 try {
                     const data = await fetchContributions(token, userName);
-                    console.log('Data fetched:', data);
+                    // console.log('Data fetched:', data);
 
                     // Extracted data from weeks
-                    const extractedData = data?.user?.contributionsCollection?.contributionCalendar?.weeks || [];
-                    console.log('Extracted Data from Weeks:', extractedData);
+                    // const extractedData = data?.user?.contributionsCollection?.contributionCalendar?.weeks || [];
+                    // console.log('Extracted Data from Weeks:', extractedData);
 
                     setGithubData(data);
                     setError(null);
@@ -68,7 +68,7 @@ const Contributions = () => {
                     endDate={heatmapData[heatmapData.length - 1]?.date}
                     values={heatmapData}
                     classForValue={(value) => {
-                        console.log('Value:', value);
+                        // console.log('Value:', value);
                         if (!value) {
                             return 'color-empty';
                         }

@@ -73,7 +73,6 @@
         animation: glow 2.5s linear infinite;
     }
 
-
     .projects-title-bar {
 
         flex-basis: 100%;
@@ -143,24 +142,28 @@
 
     }
 
-    &__image {
-        display: none;
-        width: 100%;
-        box-sizing: border-box;
-        object-fit: cover;
+    &__image-container {
         padding: 0.25rem;
-        opacity: 0.42;
+        opacity: 1;
         transition: opacity 0.125s ease-in-out;
         border-radius: 1rem;
 
-        @include desktop {
-            width: 25%;
+        &--image {
+            // display: none;
+            width: 100%;
+            opacity: 0.82;
+            position: relative;
         }
+
+
+
     }
 
-    &:hover &__image {
+    &:hover &__image-container--image {
+        display: initial;
         opacity: 1;
     }
+
 
     &__description {
         color: $color-c;

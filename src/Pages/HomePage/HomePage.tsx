@@ -39,7 +39,7 @@ const HomePage = () => {
 						</p>
 
 						<p className="">
-							<Link to="https://devpad/" target="blank" className="hp-card__link">Blog</Link>
+							<Link to="https://devpad.net" target="blank" className="hp-card__link">Blog</Link>
 						</p>
 
 					</div>

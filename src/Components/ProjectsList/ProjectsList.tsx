@@ -85,7 +85,7 @@ const ProjectsList = () => {
 					{project.image.endsWith("jpg") || project.image.endsWith("png") ? (
 						<img className="pl-card__image" src={project.image || "missing"} alt={project.name}
 							style={{
-								objectPosition: 0 + 'px' + ' ' + y + 'px',
+								objectPosition: `0px ${y}px`,
 							}} />
 					) : null}
 

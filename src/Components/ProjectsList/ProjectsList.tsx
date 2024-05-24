@@ -7,7 +7,7 @@ import { toggleActiveClass, handleActiveProject } from "../../utils/animations" 
 import { getUniqueTechnologies } from "../../utils/functions";
 // import Repositories from "../Repositories/Repositories"
 import Contributions from "../Contributions/Contributions";
-import useMousePosition from "../MousePosition/MousePosition"
+import useMousePosition from "../../utils/mousePosition"
 
 const uniqueTechnologyList: string[] = getUniqueTechnologies(projectData)
 

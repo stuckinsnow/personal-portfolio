@@ -1,5 +1,16 @@
 const projectData = [
-        {
+    {
+        date: "May 2024",
+        name: "DevPad Blog",
+        type: "Personal",
+        technology: ["NextJS", "TypeScript", "Tailwind CSS", "CMS", "Shiki", "Lexical", "GraphQL", "PostgreSQL", "Hetzner VPS"],
+        link: "/",
+        hostlink: "https://devpad.net/",
+        image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
+        // image: "",
+        desc: "The idea behind this blog was to create something fast like a react project, good SEO like wordpress, and easy to add content like medium. I made various custom components to flatten objects and arrays, and customised the CMS to get back data incredibly quickly.",
+    },
+    {
         date: "Sep 2023",
         name: "UpDaily",
         type: "Team",

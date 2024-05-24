@@ -38,6 +38,10 @@ const HomePage = () => {
 							<Link to="https://leetcode.com/philiplucas/" target="blank" className="hp-card__link">Leetcode</Link>
 						</p>
 
+						<p className="">
+							<Link to="https://devpad/" target="blank" className="hp-card__link">Blog</Link>
+						</p>
+
 					</div>
 
 					{/* <div className="hp-card hp-card--contributions">

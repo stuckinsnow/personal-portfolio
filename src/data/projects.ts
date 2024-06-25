@@ -30,7 +30,7 @@ const projectData = [
         hostlink: "https://philip-calculator.netlify.app",
         image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
         // image: "",
-        desc: "Prior to studying at BrainStation, I had a lot of experience with HTML and CSS. With this app, I decided to focus on something logic intensive, while also tasking myself with completing avoiding ChatGPT for assistance.",
+        desc: "Prior to intensively studying in 2023, I had a lot of experience with HTML and CSS due to modifying WordPress themes since 2013, so I made this to avoid doing much HTML and CSS.",
     },
     {
         date: "Aug 2023",
@@ -52,7 +52,7 @@ const projectData = [
         hostlink: "https://philiplucas.netlify.app",
         image: "https://i.imgur.com/VWpVesA.png",
         // image: "",
-        desc: "A personal web developer portfolio. I plan to make a new one as I'm not fond of the design, but this was a nice way to learn GraphQL!",
+        desc: "A personal web developer portfolio.",
     },
     {
         date: "Jun 2023",
@@ -62,7 +62,7 @@ const projectData = [
         link: "https://github.com/stuckinsnow/capstone-frontend",
         hostlink: "https://github.com/stuckinsnow/capstone-frontend",
         image: "https://i.imgur.com/q4Bp2Lh.jpg",
-        desc: "A full stack capstone project. I made this to showcase photographs and grab data from files. The EXIF data is obtained from the photograph itself upon upload, it is then saved to the back end. I was inspired by the many messages asking me what settings were used for my photographs!",
+        desc: "A full stack capstone project. I made this to showcase photographs and grab data from files. The EXIF data is obtained from the photograph itself upon upload, it is then saved to a database. Photographers used to message me on my blog asking what settings I used for a photograph, and so I thought it would be fun to extract that data.",
     },
     {
         date: "Jun 2023",
@@ -82,7 +82,7 @@ const projectData = [
         link: "https://github.com/InStock-Group4/intock-client",
         hostlink: "https://github.com/InStock-Group4/intock-client",
         image: "https://i.imgur.com/93XteOz.jpg",
-        desc: "I worked with others to create an inventory management system.",
+        desc: "Group inventory management system project.",
     },
     {
         date: "May 2023",
@@ -93,7 +93,7 @@ const projectData = [
         hostlink: "https://github.com/pichsophaneatdy/Tasty-Eats/tree/main",
         image: "https://i.imgur.com/X5FN7Yy.jpg",
         // image: "https://i.imgur.com/2KcpcFq.jpg",
-        desc: "I worked in collaboration with others to create a recipe generator and meal planner.",
+        desc: "I worked in collaboration with others to create a recipe generator and meal planner. This was a lot of fun!",
     },
     {
         date: "May 2023",

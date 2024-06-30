@@ -30,7 +30,7 @@ const projectData = [
         hostlink: "https://philip-calculator.netlify.app",
         image: "https://user-images.githubusercontent.com/126236947/261877726-7043c827-f678-4a32-848f-e0da753cfe28.jpg",
         // image: "",
-        desc: "Prior to intensively studying in 2023, I had a lot of experience with HTML and CSS due to modifying WordPress themes since 2013, so I made this to avoid doing much HTML and CSS.",
+        desc: "Prior to intensively studying in 2023, I had a lot more experience with HTML and CSS due to modifying WordPress themes; I made this to focus on logic rather than be bogged down with HTML and CSS.",
     },
     {
         date: "Aug 2023",

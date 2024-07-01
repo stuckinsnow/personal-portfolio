@@ -1,0 +1,37 @@
+.wobble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(19, 0, 33);
+
+    &__heading {
+        padding: 1rem;
+    }
+
+    &__btn {
+        text-decoration: none;
+        color: #3cff00;
+        display: flex;
+
+        &:hover .letter {
+            color: #f2ff00;
+
+            &:nth-child(odd) {
+                color: #ff00f7;
+            }
+
+            &:nth-child(2n+5) {
+                color: #ff0008;
+            }
+
+            &:nth-child(3n+2) {
+                color: #3cff00;
+            }
+        }
+    }
+}
+
+.letter {
+    transition: all 0.25s cubic-bezier(0.48, 2.06, 0.51, 0.35);
+}

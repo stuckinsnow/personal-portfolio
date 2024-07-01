@@ -3,26 +3,13 @@ import "./ProjectsList.scss"
 import projectData from "../../data/projects"
 import { Link } from "react-router-dom"
 import { useEffect, useRef, useState } from "react"
-import { toggleActiveClass, handleActiveProject } from "../../utils/animations" // Corrected import path
+import { toggleActiveClass, handleActiveProject } from "../../utils/animations"
 import { getUniqueTechnologies } from "../../utils/functions";
-// import Repositories from "../Repositories/Repositories"
 import Contributions from "../Contributions/Contributions";
 import useMousePosition from "../../utils/mousePosition"
+import { ProjectData } from '../../types';
 
 const uniqueTechnologyList: string[] = getUniqueTechnologies(projectData)
-
-
-interface ProjectData {
-	link: string
-	hostlink: string
-	name: string
-	type: string
-	date: string
-	image: string
-	desc: string
-	technology: string[]
-}
-
 
 const ProjectsList = () => {
 	const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(null);
@@ -40,9 +27,7 @@ const ProjectsList = () => {
 	return (
 		<div id="c-projects" className="c-projects">
 
-
 			<Contributions />
-
 
 			<div className="c-projects__technologies hidden-mobile">
 
@@ -88,7 +73,6 @@ const ProjectsList = () => {
 								objectPosition: `0px ${y}px`,
 							}} />
 					) : null}
-
 
 					<section className="projects-title-bar">
 						{" "}

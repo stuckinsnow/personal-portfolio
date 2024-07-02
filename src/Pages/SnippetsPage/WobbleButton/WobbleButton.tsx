@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { animateLetters } from './function/wobbleEffect';
 import { Link } from 'react-router-dom';
+
 import './WobbleButton.scss'
 
 const WobbleButton = () => {
@@ -19,10 +20,3 @@ const WobbleButton = () => {
 }
 
 export default WobbleButton;
-
-
-
-
-
-
-

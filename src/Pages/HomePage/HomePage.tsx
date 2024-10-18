@@ -12,8 +12,6 @@ const HomePage = () => {
 	return (
 		<main className="p-homepage">
 
-			<script defer src="https://umami-l4g80sc8swoo8kcc0skws4w0.44.231.47.122.sslip.io/script.js" data-website-id="482bcc0d-0391-407a-a00d-1af28dd45d39"></script>
-
 			<div className="p-homepage__group">
 
 				<section className="hp-card">

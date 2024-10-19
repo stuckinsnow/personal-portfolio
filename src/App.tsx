@@ -10,7 +10,7 @@ umami.init({
   hostUrl: 'https://umami-wwows8g84w0g40gc0k88cgwg.184.73.178.248.sslip.io/'
 });
 
-umami.track({ url: 'https://expsr.com/' });
+umami.track({ url: 'https://app.polymuse.tech/embed?id=20241009152627' });
 
 function App() {
   return (
